@@ -2,8 +2,9 @@
 #include "string.h"
 #include "projecto.h"
 
-void leerEstado(int connfd);
+void createFileAndSaveIt(int connfd);
 void quitNewCharacterLineInput(char *str);
+void compilesAndExecuteFile(informacion_cliente* infoUsuario);
 
 int main(int argc, char **argv)
 {
@@ -33,7 +34,7 @@ int main(int argc, char **argv)
 						sizeof(clientaddr.sin_addr.s_addr), AF_INET);
 			haddrp = inet_ntoa(clientaddr.sin_addr);
 			printf("server connected to %s (%s)\n", hp->h_name, haddrp);
-			leerEstado(connfd);
+			createFileAndSaveIt(connfd);
 			Close(connfd);
 			exit(0);
 		}
@@ -53,7 +54,7 @@ int main(int argc, char **argv)
 }
 
 
-void leerEstado(int connfd){
+void createFileAndSaveIt(int connfd){
 	int counter = 0;
 	size_t n;
 	char buf[MAXLINE];
@@ -68,7 +69,7 @@ void leerEstado(int connfd){
 	Rio_readlineb(&rio,buf,sizeof(buf));
 	char* identificadorCliente = (char*) malloc(MAXLINE);
 	strcpy(identificadorCliente, buf);
-	infoUsuario.identificador_cliente = atoi(identificadorCliente);
+	infoUsuario.identificador_usuario = atoi(identificadorCliente);
 
 
 
@@ -81,7 +82,7 @@ void leerEstado(int connfd){
 	strcat(nombreArchivo, identificadorCliente);
 	strcat(nombreArchivo, "-");
 	strcat(nombreArchivo, archivoNombre);
-	infoUsuario.nombre_archivo = nombreArchivo;
+	infoUsuario.ruta_archivo_fuente = nombreArchivo;
 
 	printf("identificador Cliente: %s \n", identificadorCliente);
 	printf("archivoNombre: %s\n", archivoNombre);
@@ -135,6 +136,8 @@ void leerEstado(int connfd){
 	}
 	fclose(archivoCreado);
 
+	//compilesAndExecuteFile(&infoUsuario);
+
 	free(nombreArchivo);
 	free(archivoNombre);
 	free(identificadorCliente);
@@ -142,10 +145,16 @@ void leerEstado(int connfd){
  
 }
 
+void compilesAndExecuteFile(informacion_cliente* infoUsuario){
+	char* rutaArchivo;
+}
+
 void quitNewCharacterLineInput(char *str){
 	/* Remove trailing newline, if there. */
     if ((strlen(str)>0) && (str[strlen (str) - 1] == '\n'))
         str[strlen (str) - 1] = '\0';
 }
+
+
 
 
