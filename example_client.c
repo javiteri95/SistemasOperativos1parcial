@@ -79,7 +79,7 @@ int main(int argc, char **argv)
 
 	fclose(archivoFile);
 
-
+	free(identificadorClienteStr);
 	Close(clientfd);
 	exit(0);
 }
