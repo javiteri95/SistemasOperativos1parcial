@@ -4,7 +4,8 @@
 
 void createFileAndSaveIt(int connfd);
 void quitNewCharacterLineInput(char *str);
-void compilesAndExecuteFile(informacion_cliente* infoUsuario);
+char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
+char* definirNombreEjecutable(char* nombreOriginal);
 
 int main(int argc, char **argv)
 {
@@ -83,6 +84,7 @@ void createFileAndSaveIt(int connfd){
 	strcat(nombreArchivo, "-");
 	strcat(nombreArchivo, archivoNombre);
 	infoUsuario.ruta_archivo_fuente = nombreArchivo;
+	infoUsuario.nombre_original = archivoNombre;
 
 	printf("identificador Cliente: %s \n", identificadorCliente);
 	printf("archivoNombre: %s\n", archivoNombre);
@@ -136,7 +138,8 @@ void createFileAndSaveIt(int connfd){
 	}
 	fclose(archivoCreado);
 
-	//compilesAndExecuteFile(&infoUsuario);
+	char* mensaje = compilesAndExecuteFile(&infoUsuario);
+	printf("este es mensaje: %s \n", mensaje);
 
 	free(nombreArchivo);
 	free(archivoNombre);
@@ -145,8 +148,93 @@ void createFileAndSaveIt(int connfd){
  
 }
 
-void compilesAndExecuteFile(informacion_cliente* infoUsuario){
-	char* rutaArchivo;
+char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
+	printf("entre aqui, en la funcion\n");
+	char* rutaArchivoFuente;
+	char* librerias;
+	char* nombreOriginal;
+	int usuario;
+	char* usuarioStr = (char*) malloc(1024);
+	FILE *fp;
+	char path[1035];
+
+	char* comandoCompilacion = (char*) malloc(1024);
+	char* comandoEjecucion = (char*) malloc(1024);
+	char* rutaEjecutable = (char*) malloc(1024);
+	char* mensaje = (char*) malloc(10000);
+	
+	strcpy(mensaje,"" );
+
+	rutaArchivoFuente = infoUsuario->ruta_archivo_fuente;
+	librerias = infoUsuario->banderas;
+	nombreOriginal = infoUsuario->nombre_original;
+	usuario = infoUsuario->identificador_usuario;
+	sprintf(usuarioStr, "%d", usuario);
+
+	printf("nombreOriginal: %s\n", nombreOriginal);
+
+	strcpy(rutaEjecutable, "Executables/");
+	strcat(rutaEjecutable, usuarioStr);
+	strcat(rutaEjecutable, "-");
+	strcat(rutaEjecutable, nombreOriginal);
+	strcat(rutaEjecutable, "out");
+
+	printf("ruta ejecutable es: %s\n", rutaEjecutable);
+	infoUsuario->ruta_archivo_ejecutable = rutaEjecutable;
+	//strcpy(infoUsuario->ruta_archivo_ejecutable, rutaEjecutable);
+	
+	strcpy(comandoCompilacion, "gcc -o ");
+	strcat(comandoCompilacion, rutaEjecutable);
+	strcat(comandoCompilacion, " ");
+	strcat(comandoCompilacion, rutaArchivoFuente);
+	strcat(comandoCompilacion, " ");
+	if (librerias != NULL){
+		strcat(comandoCompilacion, librerias);
+	}
+	
+	printf("este es comando compilacion: %s\n", comandoCompilacion);
+
+	int status = system(comandoCompilacion);
+
+	if( status != 0){
+		mensaje = "Error in compilation \n";
+	}else{
+		strcpy(comandoEjecucion, "./");
+		strcat(comandoEjecucion, rutaEjecutable);
+		printf("este es comando ejecucion: %s\n", comandoEjecucion);
+		strcat(mensaje,"");
+		fp = popen(comandoEjecucion, "r");
+		if (fp == NULL) {
+			printf("Failed to run command\n" );
+			exit(1);
+		}
+
+		while (fgets(path, sizeof(path)-1, fp) != NULL) {
+			strcat(mensaje,path);
+			//printf("este es: %s", path);
+		}
+
+		pclose(fp);
+
+	}
+
+	free(usuarioStr);
+
+	return mensaje;
+
+
+
+
+
+}
+
+char* definirNombreEjecutable(char* nombreOriginal){
+	char *nombreEjecutable = (char*) malloc(1024);
+	strcpy(nombreEjecutable, "Executables/");
+	strcat(nombreEjecutable, nombreOriginal);
+	strcat(nombreEjecutable, "out");
+
+	return nombreEjecutable;
 }
 
 void quitNewCharacterLineInput(char *str){

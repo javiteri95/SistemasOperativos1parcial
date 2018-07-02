@@ -5,6 +5,6 @@ typedef struct informacion_cliente{
     char* respuesta;
     int orden_llegada;
     int identificador_usuario;
-
+    char* nombre_original;
     char* banderas;
 }informacion_cliente;
