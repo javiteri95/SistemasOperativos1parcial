@@ -5,7 +5,7 @@ CFLAGS = -O2 -Wall -I./include -lm
 # Others systems will probably require something different.
 LIB = -lpthread
 
-all: RCT client server
+all: client server
 RCT: RCT.c csapp.o
 	$(CC) $(CFLAGS)  -o RCT RCT.c csapp.o $(LIB)
 
