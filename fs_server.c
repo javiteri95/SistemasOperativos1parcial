@@ -7,6 +7,10 @@ void quitNewCharacterLineInput(char *str);
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
 char* definirNombreEjecutable(char* nombreOriginal);
 
+sem_t mutex;
+informacion_cliente tablaUsuarios[10000];
+int orden_llegada = 0;
+
 int main(int argc, char **argv)
 {
 	int listenfd, connfd;
@@ -14,10 +18,22 @@ int main(int argc, char **argv)
 	struct sockaddr_in clientaddr;
 	struct hostent *hp;
 	char *haddrp, *port;
+	struct stat st = {0};
+	//sem_wait (&mutex);
+	//sem_post (&mutex);
+	sem_init(&mutex,1, 1);
 
 	if (argc != 2) {
 		fprintf(stderr, "usage: %s <port>\n", argv[0]);
 		exit(0);
+	}
+
+	if (stat("./Files", &st) == -1) {
+		mkdir("./Files", 0700);
+	}
+
+	if (stat("./Executables", &st) == -1) {
+		mkdir("./Executables", 0700);
 	}
 	port = argv[1];
 
@@ -35,6 +51,19 @@ int main(int argc, char **argv)
 						sizeof(clientaddr.sin_addr.s_addr), AF_INET);
 			haddrp = inet_ntoa(clientaddr.sin_addr);
 			printf("server connected to %s (%s)\n", hp->h_name, haddrp);
+
+			sem_wait (&mutex);
+			orden_llegada++;
+			
+			time_t timestamp_sec; /* timestamp in second */
+  			time(&timestamp_sec);  /* get current time; same as: timestamp_sec = time(NULL)*/
+			int timestamp = (int) timestamp_sec;
+
+			sem_post (&mutex);
+
+
+			
+
 			createFileAndSaveIt(connfd);
 			Close(connfd);
 			exit(0);
@@ -70,7 +99,9 @@ void createFileAndSaveIt(int connfd){
 	Rio_readlineb(&rio,buf,sizeof(buf));
 	char* identificadorCliente = (char*) malloc(MAXLINE);
 	strcpy(identificadorCliente, buf);
+	sem_wait (&mutex);
 	infoUsuario.identificador_usuario = atoi(identificadorCliente);
+	sem_post (&mutex);
 
 
 
@@ -83,8 +114,10 @@ void createFileAndSaveIt(int connfd){
 	strcat(nombreArchivo, identificadorCliente);
 	strcat(nombreArchivo, "-");
 	strcat(nombreArchivo, archivoNombre);
+	sem_wait (&mutex);
 	infoUsuario.ruta_archivo_fuente = nombreArchivo;
 	infoUsuario.nombre_original = archivoNombre;
+	sem_post (&mutex);
 
 	printf("identificador Cliente: %s \n", identificadorCliente);
 	printf("archivoNombre: %s\n", archivoNombre);
@@ -139,6 +172,9 @@ void createFileAndSaveIt(int connfd){
 	fclose(archivoCreado);
 
 	char* mensaje = compilesAndExecuteFile(&infoUsuario);
+	sem_wait (&mutex);
+	infoUsuario.respuesta = mensaje;
+	sem_post (&mutex);
 	printf("este es mensaje: %s \n", mensaje);
 
 	Rio_writen(connfd, "Inicio (comunicacion)\n" , strlen("Inicio (comunicacion)\n"));
@@ -168,11 +204,12 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	char* mensaje = (char*) malloc(10000);
 	
 	strcpy(mensaje,"" );
-
+	sem_wait (&mutex);
 	rutaArchivoFuente = infoUsuario->ruta_archivo_fuente;
 	librerias = infoUsuario->banderas;
 	nombreOriginal = infoUsuario->nombre_original;
 	usuario = infoUsuario->identificador_usuario;
+	sem_post(&mutex);
 	sprintf(usuarioStr, "%d", usuario);
 
 	printf("nombreOriginal: %s\n", nombreOriginal);
@@ -184,7 +221,9 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	strcat(rutaEjecutable, "out");
 
 	printf("ruta ejecutable es: %s\n", rutaEjecutable);
+	sem_wait (&mutex);
 	infoUsuario->ruta_archivo_ejecutable = rutaEjecutable;
+	sem_post (&mutex);
 	//strcpy(infoUsuario->ruta_archivo_ejecutable, rutaEjecutable);
 	
 	strcpy(comandoCompilacion, "gcc -o ");

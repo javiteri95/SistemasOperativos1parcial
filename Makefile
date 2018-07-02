@@ -10,10 +10,10 @@ RCT: RCT.c csapp.o
 	$(CC) $(CFLAGS)  -o RCT RCT.c csapp.o $(LIB)
 
 client: example_client.c csapp.o
-	$(CC) $(CFLAGS) -o example_client example_client.c csapp.o $(LIB)
+	$(CC) $(CFLAGS) -o client example_client.c csapp.o $(LIB)
 
 server: fs_server.c csapp.o
-	$(CC) $(CFLAGS) -o example_server fs_server.c csapp.o $(LIB)
+	$(CC) $(CFLAGS) -o server fs_server.c csapp.o $(LIB)
 
 csapp.o: lib/csapp.c
 	$(CC) $(CFLAGS) -c lib/csapp.c
