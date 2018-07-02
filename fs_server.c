@@ -2,7 +2,7 @@
 #include "string.h"
 #include "projecto.h"
 
-void createFileAndSaveIt(int connfd);
+void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario);
 void quitNewCharacterLineInput(char *str);
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
 char* definirNombreEjecutable(char* nombreOriginal);
@@ -54,17 +54,22 @@ int main(int argc, char **argv)
 
 			sem_wait (&mutex);
 			orden_llegada++;
-			
 			time_t timestamp_sec; /* timestamp in second */
   			time(&timestamp_sec);  /* get current time; same as: timestamp_sec = time(NULL)*/
 			int timestamp = (int) timestamp_sec;
+			informacion_cliente infoUsuario;
+			infoUsuario.tiempo_envio = timestamp;
+			infoUsuario.orden_llegada = orden_llegada;
+			tablaUsuarios[orden_llegada] = infoUsuario;
+			
+
 
 			sem_post (&mutex);
 
 
 			
 
-			createFileAndSaveIt(connfd);
+			createFileAndSaveIt(connfd, &infoUsuario);
 			Close(connfd);
 			exit(0);
 		}
@@ -84,7 +89,7 @@ int main(int argc, char **argv)
 }
 
 
-void createFileAndSaveIt(int connfd){
+void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 	int counter = 0;
 	size_t n;
 	char buf[MAXLINE];
@@ -92,7 +97,6 @@ void createFileAndSaveIt(int connfd){
 	struct stat fileStat;
 	char *temp;
 	char *nombreArchivo = (char*) malloc(MAXLINE);
-	informacion_cliente infoUsuario;
 
 	Rio_readinitb(&rio, connfd);
 
@@ -100,7 +104,7 @@ void createFileAndSaveIt(int connfd){
 	char* identificadorCliente = (char*) malloc(MAXLINE);
 	strcpy(identificadorCliente, buf);
 	sem_wait (&mutex);
-	infoUsuario.identificador_usuario = atoi(identificadorCliente);
+	infoUsuario->identificador_usuario = atoi(identificadorCliente);
 	sem_post (&mutex);
 
 
@@ -115,8 +119,8 @@ void createFileAndSaveIt(int connfd){
 	strcat(nombreArchivo, "-");
 	strcat(nombreArchivo, archivoNombre);
 	sem_wait (&mutex);
-	infoUsuario.ruta_archivo_fuente = nombreArchivo;
-	infoUsuario.nombre_original = archivoNombre;
+	infoUsuario->ruta_archivo_fuente = nombreArchivo;
+	infoUsuario->nombre_original = archivoNombre;
 	sem_post (&mutex);
 
 	printf("identificador Cliente: %s \n", identificadorCliente);
@@ -171,9 +175,9 @@ void createFileAndSaveIt(int connfd){
 	}
 	fclose(archivoCreado);
 
-	char* mensaje = compilesAndExecuteFile(&infoUsuario);
+	char* mensaje = compilesAndExecuteFile(infoUsuario);
 	sem_wait (&mutex);
-	infoUsuario.respuesta = mensaje;
+	infoUsuario->respuesta = mensaje;
 	sem_post (&mutex);
 	printf("este es mensaje: %s \n", mensaje);
 
