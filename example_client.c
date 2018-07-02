@@ -77,6 +77,16 @@ int main(int argc, char **argv)
 	char *final = "fin\n";
 	Rio_writen(clientfd, final , strlen(final));
 
+	Rio_readlineb(&rio, buf, sizeof(buf));
+	printf("mensaje es: \n");
+	while(1){
+		Rio_readlineb(&rio, buf, sizeof(buf));
+		if (strcmp(buf, "Fin (comunicacion)\n") == 0){
+			break;
+		}
+		printf("%s", buf);
+	}
+
 	fclose(archivoFile);
 
 	free(identificadorClienteStr);

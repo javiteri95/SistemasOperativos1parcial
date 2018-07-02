@@ -141,6 +141,10 @@ void createFileAndSaveIt(int connfd){
 	char* mensaje = compilesAndExecuteFile(&infoUsuario);
 	printf("este es mensaje: %s \n", mensaje);
 
+	Rio_writen(connfd, "Inicio (comunicacion)\n" , strlen("Inicio (comunicacion)\n"));
+	Rio_writen(connfd, mensaje , strlen(mensaje));
+	Rio_writen(connfd, "Fin (comunicacion)\n" , strlen("Fin (comunicacion)\n"));
+
 	free(nombreArchivo);
 	free(archivoNombre);
 	free(identificadorCliente);
