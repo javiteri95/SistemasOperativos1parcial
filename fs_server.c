@@ -9,6 +9,7 @@ char* definirNombreEjecutable(char* nombreOriginal);
 
 sem_t mutex;
 informacion_cliente tablaUsuarios[10000];
+//pid_t pids[10000];
 int orden_llegada = 0;
 
 int main(int argc, char **argv)
@@ -40,9 +41,12 @@ int main(int argc, char **argv)
 	listenfd = Open_listenfd(port);
 	while (1) {
 		clientlen = sizeof(clientaddr);
+		//printf("esperando conexión servidor...\n");
 		connfd = Accept(listenfd, (SA *)&clientaddr, &clientlen);
+		pid_t pid;
+		int status;
 
-		if(Fork() == 0){
+		if(pid = Fork() == 0){
 
 			Close(listenfd);
 
@@ -73,17 +77,9 @@ int main(int argc, char **argv)
 			Close(connfd);
 			exit(0);
 		}
+		//printf("este es temp %d \n", pid);
 
-		/* Determine the domain name and IP address of the client */
-		/*
-		hp = Gethostbyaddr((const char *)&clientaddr.sin_addr.s_addr,
-					sizeof(clientaddr.sin_addr.s_addr), AF_INET);
-		haddrp = inet_ntoa(clientaddr.sin_addr);
-		printf("server connected to %s (%s)\n", hp->h_name, haddrp);
 
-		
-		Close(connfd);
-		*/
 	}
 	exit(0);
 }
@@ -126,41 +122,6 @@ void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 	printf("identificador Cliente: %s \n", identificadorCliente);
 	printf("archivoNombre: %s\n", archivoNombre);
 	printf("nombreArchivo: %s\n", nombreArchivo);
-
-	/*
-	while((n = Rio_readlineb(&rio, buf, MAXLINE)) != 0) {
-		
-		//quitNewCharacterLineInput(buf);
-		
-		if((stat(buf,&fileStat) < 0))  {  
-		  	printf("no existe el archivo %s\n", buf );
-		  	temp = "0\n";
-		  	Rio_writen(connfd, temp, 2*sizeof(char));
-	        //return -1;
-	 	}else if ((stat(buf,&fileStat) >= 0)) {
-	 		counter=1;
-	 		printf("existe el archivo %s\n", buf);
-	 		strcpy(nombreArchivo,buf);
-	 		temp = "1\n";
-	 		Rio_writen(connfd, temp, 2*sizeof(char));
-	 		FILE *archivo;
-	 		char line[MAXLINE];
-	 		archivo = fopen(nombreArchivo,"r");
-	 		while ( fgets(line, sizeof(line), archivo) != NULL){
-	 			Rio_writen(connfd, line , strlen(line));
-	 		}
-	 		char *final = "fin\n";
-	 		Rio_writen(connfd, final , strlen(final));
-	 	}
-		 
-
-
-	 	
-	 	
-
-	 }*/
-
-
 	
 	FILE *archivoCreado;
 	
@@ -193,7 +154,6 @@ void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 }
 
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
-	printf("entre aqui, en la funcion\n");
 	char* rutaArchivoFuente;
 	char* librerias;
 	char* nombreOriginal;
