@@ -1,6 +1,7 @@
 #include "csapp.h"
 #include "string.h"
 #include "projecto.h"
+#include <time.h>
 
 void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario);
 void quitNewCharacterLineInput(char *str);
@@ -9,7 +10,7 @@ char* definirNombreEjecutable(char* nombreOriginal);
 
 sem_t mutex;
 informacion_cliente tablaUsuarios[10000];
-//pid_t pids[10000];
+pid_t pids[10000];
 int orden_llegada = 0;
 
 int main(int argc, char **argv)
@@ -23,6 +24,7 @@ int main(int argc, char **argv)
 	//sem_wait (&mutex);
 	//sem_post (&mutex);
 	sem_init(&mutex,1, 1);
+	time_t when;
 
 	if (argc != 2) {
 		fprintf(stderr, "usage: %s <port>\n", argv[0]);
@@ -46,9 +48,9 @@ int main(int argc, char **argv)
 		pid_t pid;
 		int status;
 
-		if(pid = Fork() == 0){
-
+		if (pid = Fork() == 0){
 			Close(listenfd);
+			//time(&when);
 
 			/* Determine the domain name and IP address of the client */
 			hp = Gethostbyaddr((const char *)&clientaddr.sin_addr.s_addr,
@@ -75,9 +77,36 @@ int main(int argc, char **argv)
 
 			createFileAndSaveIt(connfd, &infoUsuario);
 			Close(connfd);
-			exit(0);
+			exit(3);
+
+		}else{ //parent
+			printf("enter here\n");
+			pid_t end_id;
+			//end_id = waitpid(pid, &status, 0 );
+			end_id = waitpid(pid, &status, WNOHANG|WUNTRACED );
+			printf("end_id:%d\npid: %d\n", end_id, pid);
+			time(&when);
+			if (end_id == -1) {            /* error calling waitpid       */
+				perror("waitpid error");
+				exit(EXIT_FAILURE);
+			}
+			else if (end_id == 0) {        /* child still running         */
+				time(&when);
+				printf("Parent waiting for child at %s", ctime(&when));
+				//sleep(1);
+			}
+			else if (end_id == pid) {  /* child ended                 */
+				if (WIFEXITED(status))
+					printf("Child ended normally\n");
+				else if (WIFSIGNALED(status))
+					printf("Child ended because of an uncaught signal\n");
+				else if (WIFSTOPPED(status))
+					printf("Child process has stopped\n");
+				exit(EXIT_SUCCESS);
+			}
+
+
 		}
-		//printf("este es temp %d \n", pid);
 
 
 	}
@@ -87,11 +116,11 @@ int main(int argc, char **argv)
 
 void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 	int counter = 0;
-	size_t n;
+	//size_t n;
 	char buf[MAXLINE];
 	rio_t rio;
-	struct stat fileStat;
-	char *temp;
+	//struct stat fileStat;
+	//char *temp;
 	char *nombreArchivo = (char*) malloc(MAXLINE);
 
 	Rio_readinitb(&rio, connfd);
@@ -195,9 +224,13 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	strcat(comandoCompilacion, " ");
 	strcat(comandoCompilacion, rutaArchivoFuente);
 	strcat(comandoCompilacion, " ");
+	/*
 	if (librerias != NULL){
+		printf("entra aqui librerias\n");
 		strcat(comandoCompilacion, librerias);
 	}
+	*/
+	
 	
 	printf("este es comando compilacion: %s\n", comandoCompilacion);
 
