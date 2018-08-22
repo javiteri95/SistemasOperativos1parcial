@@ -5,31 +5,32 @@
 #include <unistd.h>
 #include <time.h>
 #include <stdlib.h>
-/*
-typedef struct myStruct{
-    int one;
-    int two;
-} myStruct;
-*/
+
 int generate_random_id();
+void quitNewCharacterLineInput(char *str);
 
 int main(int argc, char **argv)
 {
 	int clientfd;
 	char *port;
 	char *host, buf[MAXLINE];
-	char *archivo;
+	char archivo[MAXLINE];
 	rio_t rio;
-	size_t n;
+	//size_t n;
 
-	if (argc != 4) {
-		fprintf(stderr, "usage: %s <host> <port> <archivo>\n", argv[0]);
+	if (argc != 3) {
+		fprintf(stderr, "usage: %s <host> <port>\n", argv[0]);
 		exit(0);
 	}
 	host = argv[1];
 	port = argv[2];
 	//Nombre del archivo
-	archivo = argv[3];
+	printf("Ingrese nombre de archivo a enviar\n");
+	fgets(archivo, sizeof(archivo), stdin);
+	quitNewCharacterLineInput(archivo);
+	printf("Su archivo es %s\n",archivo);
+
+	//archivo = argv[3];
 	clientfd = Open_clientfd(host, port);
 	Rio_readinitb(&rio, clientfd);
 	//strcpy(buf, archivo);
@@ -98,5 +99,11 @@ int generate_random_id(){
 	srand(time(NULL));   // should only be called once
 	int r = rand();      // returns a pseudo-random integer between 0 and RAND_MAX
 	return r;
+}
+
+void quitNewCharacterLineInput(char *str){
+	/* Remove trailing newline, if there. */
+    if ((strlen(str)>0) && (str[strlen (str) - 1] == '\n'))
+        str[strlen (str) - 1] = '\0';
 }
 
