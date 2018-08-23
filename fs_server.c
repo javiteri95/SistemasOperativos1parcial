@@ -2,16 +2,20 @@
 #include "string.h"
 #include "projecto.h"
 #include <time.h>
+#include <sys/resource.h>
 
 void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario);
 void quitNewCharacterLineInput(char *str);
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
 char* definirNombreEjecutable(char* nombreOriginal);
+void* hiloAdministrador(void *arg);
 
 sem_t mutex;
 informacion_cliente tablaUsuarios[10000];
 pid_t pids[10000];
 int orden_llegada = 0;
+int counterPids = 0;
+pthread_t tid;
 
 int main(int argc, char **argv)
 {
@@ -25,6 +29,11 @@ int main(int argc, char **argv)
 	//sem_post (&mutex);
 	sem_init(&mutex,1, 1);
 	time_t when;
+	pid_t pid;
+	int status;
+	int statusThread;
+
+	statusThread = pthread_create(&tid, NULL, &hiloAdministrador, NULL);
 
 	if (argc != 2) {
 		fprintf(stderr, "usage: %s <port>\n", argv[0]);
@@ -45,11 +54,11 @@ int main(int argc, char **argv)
 		clientlen = sizeof(clientaddr);
 		//printf("esperando conexión servidor...\n");
 		connfd = Accept(listenfd, (SA *)&clientaddr, &clientlen);
-		pid_t pid;
-		int status;
+		pid = Fork();
+		if (pid == 0){
 
-		if (pid = Fork() == 0){
 			Close(listenfd);
+
 			//time(&when);
 
 			/* Determine the domain name and IP address of the client */
@@ -59,6 +68,10 @@ int main(int argc, char **argv)
 			printf("server connected to %s (%s)\n", hp->h_name, haddrp);
 
 			sem_wait (&mutex);
+			pid_t localPid = getpid();
+			printf("local pid: %d\n", localPid);
+			pids[counterPids] = localPid;
+			counterPids++;
 			orden_llegada++;
 			time_t timestamp_sec; /* timestamp in second */
   			time(&timestamp_sec);  /* get current time; same as: timestamp_sec = time(NULL)*/
@@ -80,22 +93,32 @@ int main(int argc, char **argv)
 			exit(3);
 
 		}else{ //parent
-			printf("enter here\n");
-			pid_t end_id;
-			//end_id = waitpid(pid, &status, 0 );
-			end_id = waitpid(pid, &status, WNOHANG|WUNTRACED );
-			printf("end_id:%d\npid: %d\n", end_id, pid);
+			printf("\nenter here\n");
+			printf("pid: %d\n", pid);
+			pids[counterPids] = pid;
+			counterPids++;			
+			printf("counterPids: %d\n", counterPids);
+			for ( int i = 0;i < counterPids; i++){
+				printf("procesos activos: %d\n", pids[i]);
+			}
+			/*
+			end_id = waitpid(pid, &status, 0 );
+			//end_id = waitpid(pid, &status, WNOHANG|WUNTRACED );
+			printf("end_id:%d\npid: %d\ncounterPid: %d\n", end_id, pid, counterPids);
+			for ( int i = 0;i < counterPids; i++){
+				printf("procesos activos: %d\n", pids[i]);
+			}
 			time(&when);
-			if (end_id == -1) {            /* error calling waitpid       */
+			if (end_id == -1) {            // error calling waitpid       
 				perror("waitpid error");
 				exit(EXIT_FAILURE);
 			}
-			else if (end_id == 0) {        /* child still running         */
+			else if (end_id == 0) {        // child still running         
 				time(&when);
 				printf("Parent waiting for child at %s", ctime(&when));
 				//sleep(1);
 			}
-			else if (end_id == pid) {  /* child ended                 */
+			else if (end_id == pid) {  // child ended                 
 				if (WIFEXITED(status))
 					printf("Child ended normally\n");
 				else if (WIFSIGNALED(status))
@@ -104,6 +127,7 @@ int main(int argc, char **argv)
 					printf("Child process has stopped\n");
 				exit(EXIT_SUCCESS);
 			}
+			*/
 
 
 		}
@@ -178,6 +202,11 @@ void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 	free(nombreArchivo);
 	free(archivoNombre);
 	free(identificadorCliente);
+	
+	while (1){
+
+	}
+	
 
  
 }
@@ -283,6 +312,42 @@ void quitNewCharacterLineInput(char *str){
         str[strlen (str) - 1] = '\0';
 }
 
+void* hiloAdministrador(void *arg)
+{
+	printf("Bienvenidos al menu de administracion de procesos\n");
+	int opcion1;
+	//sched_setaffinity() http://www.tutorialspoint.com/unix_system_calls/sched_setaffinity.htm
+	//struct struct rusage http://pubs.opengroup.org/onlinepubs/000095399/functions/getrusage.html
+	//
+
+	while (1){
+		printf("A continuación las opciones\n");
+		printf("1) Ver pids de los procesos involucrados\n");
+		printf("2) Ver información de un proceso\n");
+		printf("3) Parar o Matar un proceso específico\n");
+		printf("4) Cualquier otra opción para salir\n");
+
+		scanf("%d", &opcion1);
+		printf("su opcion fue: %d\n", opcion1);
+		//quitNewCharacterLineInput(opcion1);
+
+		if (opcion1 == 1){
+			sem_wait(&mutex);
+			int numberProcess = counterPids;
+			sem_post(&mutex);
+			for (int i = 0; i < numberProcess; i++){
+				sem_wait(&mutex);
+				printf("proceso %d: pid %d \n", i , pids[i]);
+				sem_post(&mutex);
+			}
+		}else{
+			printf("Ha salido del modo administrador\n");
+			break;
+		}
+	}
+
+    return NULL;
+}
 
 
 
