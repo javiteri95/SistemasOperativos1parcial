@@ -9,6 +9,8 @@ void quitNewCharacterLineInput(char *str);
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
 char* definirNombreEjecutable(char* nombreOriginal);
 void* hiloAdministrador(void *arg);
+//char* readFile(char *filename);
+int readArchivo(char* path, char* resultado, int resultadoSize);
 
 sem_t mutex;
 informacion_cliente tablaUsuarios[10000];
@@ -315,10 +317,12 @@ void quitNewCharacterLineInput(char *str){
 void* hiloAdministrador(void *arg)
 {
 	printf("Bienvenidos al menu de administracion de procesos\n");
-	int opcion1;
+	int opcion1, opcion2;
+	int booleanoOpcion2 = 0;
 	//sched_setaffinity() http://www.tutorialspoint.com/unix_system_calls/sched_setaffinity.htm
+	//logs 
 	//struct struct rusage http://pubs.opengroup.org/onlinepubs/000095399/functions/getrusage.html
-	//
+	//logs cada cierto tiempo
 
 	while (1){
 		printf("A continuación las opciones\n");
@@ -340,6 +344,53 @@ void* hiloAdministrador(void *arg)
 				printf("proceso %d: pid %d \n", i , pids[i]);
 				sem_post(&mutex);
 			}
+		} else if(opcion1 == 2){
+			printf("Ingrese el PID del proceso\n");
+			scanf("%d", &opcion2);
+			int pidLocal;
+			sem_wait(&mutex);
+			int numberProcess = counterPids;
+			sem_post(&mutex);
+			for (int i = 0; i < numberProcess; i++){
+				sem_wait(&mutex);
+				if (pids[i] == opcion2){
+					printf("Su proceso existe\n");
+					pidLocal = pids[i];
+					booleanoOpcion2 = 1;
+					break;
+				}
+				sem_post(&mutex);
+			}
+			if (booleanoOpcion2){
+				printf("estoy entrando aqui\n");
+				char* pidElegido = (char*) malloc(MAXLINE);
+				char* pathArchivo = (char*) malloc(MAXLINE);
+				char* stringRespuesta = (char*) malloc(MAXLINE);
+				sprintf(pidElegido, "%d", pidLocal);				
+				strcpy(pathArchivo, "/proc/");
+				strcat(pathArchivo, pidElegido);
+				strcat(pathArchivo, "/stat");
+				/*
+				char *contenidoArchivo = readFile(pathArchivo);
+				printf("pathArchivo: %s\n", pathArchivo);
+				if (contenidoArchivo)
+				{
+					puts(contenidoArchivo);
+					free(contenidoArchivo);
+				}
+				*/
+				int resultadoArchivo = readArchivo(pathArchivo, stringRespuesta, MAXLINE);
+				printf("stringRespuesta: %s", stringRespuesta);
+				free(pidElegido);
+				free(pathArchivo);
+				free(stringRespuesta);
+
+			}else{
+				printf("No existe proceso con ese PID\n");
+			}
+
+
+
 		}else{
 			printf("Ha salido del modo administrador\n");
 			break;
@@ -347,6 +398,60 @@ void* hiloAdministrador(void *arg)
 	}
 
     return NULL;
+}
+/*
+char* readFile(char *filename)
+{
+   char *buffer = NULL;
+   int string_size, read_size;
+   FILE *handler = fopen(filename, "r");
+
+   if (handler)
+   {
+       // Seek the last byte of the file
+       fseek(handler, 0, SEEK_END);
+       // Offset from the first to the last byte, or in other words, filesize
+       string_size = ftell(handler);
+       // go back to the start of the file
+       rewind(handler);
+
+       // Allocate a string that can hold it all
+       buffer = (char*) malloc(sizeof(char) * (string_size + 1) );
+
+       // Read it all in one operation
+       read_size = fread(buffer, sizeof(char), string_size, handler);
+
+       // fread doesn't set it so put a \0 in the last position
+       // and buffer is now officially a string
+       buffer[string_size] = '\0';
+
+       if (string_size != read_size)
+       {
+           // Something went wrong, throw away the memory and set
+           // the buffer to NULL
+           free(buffer);
+           buffer = NULL;
+       }
+
+       // Always remember to close the file.
+       fclose(handler);
+    }
+
+    return buffer;
+}
+*/
+
+int readArchivo(char* path, char* resultado, int resultadoSize){
+	FILE *archivo;
+	archivo = fopen(path, "r");
+	if (archivo){
+		fgets(resultado,resultadoSize, (FILE*) archivo);
+		return 1;
+	}else{
+		printf("algo malo sucedio\n");
+		return 0;
+	}
+	
 }
 
 
