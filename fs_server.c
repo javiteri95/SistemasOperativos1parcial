@@ -3,6 +3,7 @@
 #include "projecto.h"
 #include <time.h>
 #include <sys/resource.h>
+#include <sys/times.h> 
 
 void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario);
 void quitNewCharacterLineInput(char *str);
@@ -317,7 +318,7 @@ void quitNewCharacterLineInput(char *str){
 void* hiloAdministrador(void *arg)
 {
 	printf("Bienvenidos al menu de administracion de procesos\n");
-	int opcion1, opcion2;
+	printf ("_SC_CLK_TCK = %ld\n", sysconf (_SC_CLK_TCK)); 
 	int booleanoOpcion2 = 0;
 	//sched_setaffinity() http://www.tutorialspoint.com/unix_system_calls/sched_setaffinity.htm
 	//logs 
@@ -325,6 +326,7 @@ void* hiloAdministrador(void *arg)
 	//logs cada cierto tiempo
 
 	while (1){
+		int opcion1, opcion2;
 		printf("A continuación las opciones\n");
 		printf("1) Ver pids de los procesos involucrados\n");
 		printf("2) Ver información de un proceso\n");
@@ -380,7 +382,79 @@ void* hiloAdministrador(void *arg)
 				}
 				*/
 				int resultadoArchivo = readArchivo(pathArchivo, stringRespuesta, MAXLINE);
-				printf("stringRespuesta: %s", stringRespuesta);
+				if (resultadoArchivo){
+					char* stringArchivo2 = strdup(stringRespuesta);
+					char* token;
+					unsigned long minorFaults;
+					unsigned long minorFaultsWait;
+					unsigned long mayorFaults;
+					unsigned long mayorFaultsWait;
+
+					unsigned long usermode;
+					unsigned long kernelmode;
+					unsigned long usermodeWait;
+					unsigned long kernelmodeWait;
+
+					unsigned long virtualMemory;
+					/*
+					10 - numero de minor faults %lu
+					11 - numero de minor faults esperando hijos %lu
+
+					12 - numero de mayor faults %lu
+					13 - numero de mayor faults esperando hijos %lu
+
+					14 - tiempo en user mode %lu
+					15 - tiempo en kernel mode %lu
+
+					16 - tiempo en user mode esperando hijos %ld
+					17 - tiempo en kernel esperando hijos %ld
+
+					23 - virtual memory %lu
+
+					41 - policy %u
+
+					*/
+					//printf("stringRespuesta: %s", stringRespuesta);
+					for (int i = 0; i < 23 ; i++){
+						token = strsep(&stringArchivo2, " ");
+						if (i == 9){
+							sscanf(token, "%lu", &minorFaults);
+						}else if( i == 10){
+							sscanf(token, "%lu", &minorFaultsWait);
+						}else if (i == 11){
+							sscanf(token, "%lu", &mayorFaults);
+						}else if (i == 12){
+							sscanf(token, "%lu", &mayorFaultsWait);
+						}else if (i == 13){
+							sscanf(token, "%lu", &usermode);
+						}else if( i == 14){
+							sscanf(token, "%lu", &kernelmode);
+							//kernelmode
+						}else if (i == 15){
+							sscanf(token, "%lu", &usermodeWait);
+
+						}else if (i == 16){
+							sscanf(token, "%lu", &kernelmodeWait);
+						}else if (i == 22){
+							sscanf(token, "%lu", &virtualMemory);
+						}
+					}
+					unsigned long totalPageFaults = minorFaults + mayorFaults + minorFaultsWait + mayorFaultsWait;
+					unsigned long totalmode = (usermode + kernelmode +usermodeWait + kernelmodeWait) / (sysconf (_SC_CLK_TCK));
+
+					printf("\nProcess information\n");
+					printf("Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
+					printf("Total mayor faults: %lu\n", mayorFaults + mayorFaultsWait);
+					printf("Total Page Faults: %lu\n", totalPageFaults);
+					printf("Total time spent in kernel mode: %lu seconds \n", (kernelmode + kernelmodeWait)/ (sysconf (_SC_CLK_TCK)) );
+					printf("Total time spent in user mode: %lu seconds \n", (usermode + usermodeWait)/ (sysconf (_SC_CLK_TCK)) );
+					printf("Total time of process been scheduled: %lu seconds \n", totalmode);
+					printf("Total virtual memory: %lu\n\n", virtualMemory);
+
+				}else{
+					printf("algo malo sucedio\n");
+				}
+				
 				free(pidElegido);
 				free(pathArchivo);
 				free(stringRespuesta);
@@ -399,58 +473,20 @@ void* hiloAdministrador(void *arg)
 
     return NULL;
 }
-/*
-char* readFile(char *filename)
-{
-   char *buffer = NULL;
-   int string_size, read_size;
-   FILE *handler = fopen(filename, "r");
-
-   if (handler)
-   {
-       // Seek the last byte of the file
-       fseek(handler, 0, SEEK_END);
-       // Offset from the first to the last byte, or in other words, filesize
-       string_size = ftell(handler);
-       // go back to the start of the file
-       rewind(handler);
-
-       // Allocate a string that can hold it all
-       buffer = (char*) malloc(sizeof(char) * (string_size + 1) );
-
-       // Read it all in one operation
-       read_size = fread(buffer, sizeof(char), string_size, handler);
-
-       // fread doesn't set it so put a \0 in the last position
-       // and buffer is now officially a string
-       buffer[string_size] = '\0';
-
-       if (string_size != read_size)
-       {
-           // Something went wrong, throw away the memory and set
-           // the buffer to NULL
-           free(buffer);
-           buffer = NULL;
-       }
-
-       // Always remember to close the file.
-       fclose(handler);
-    }
-
-    return buffer;
-}
-*/
 
 int readArchivo(char* path, char* resultado, int resultadoSize){
 	FILE *archivo;
 	archivo = fopen(path, "r");
 	if (archivo){
 		fgets(resultado,resultadoSize, (FILE*) archivo);
+		fclose(archivo);
 		return 1;
 	}else{
 		printf("algo malo sucedio\n");
+		fclose(archivo);
 		return 0;
 	}
+	
 	
 }
 
