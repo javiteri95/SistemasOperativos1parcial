@@ -10,20 +10,21 @@ void quitNewCharacterLineInput(char *str);
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
 char* definirNombreEjecutable(char* nombreOriginal);
 void* hiloAdministrador(void *arg);
-void* hiloRecogedor(void * arg);
+void* hiloLog(void *arg);
 void manejadorSennales(int pid, int sennal);
 void  SIGINT_handler(int);   
 void  SIGQUIT_handler(int);
 void clean_stdin(void);
 //char* readFile(char *filename);
 int readArchivo(char* path, char* resultado, int resultadoSize);
+void generarEstadisticas(int pidLocal, int modo);
 
 sem_t mutex;
 informacion_cliente tablaUsuarios[10000];
 pid_t pids[10000];
 int orden_llegada = 0;
 int counterPids = 0;
-pthread_t tid;
+pthread_t tid,tid2;
 
 int main(int argc, char **argv)
 {
@@ -40,9 +41,10 @@ int main(int argc, char **argv)
 	pid_t pid;
 	int status;
 	int statusThread;
-	//int trashThread;
+	int logThread;
 
 	statusThread = pthread_create(&tid, NULL, &hiloAdministrador, NULL);
+	logThread = pthread_create(&tid2, NULL, &hiloLog, NULL);
 	//trashThread = pthread_create(&tid2, NULL, &hiloRecogedor, NULL);
 
 	if (argc != 2) {
@@ -377,107 +379,7 @@ void* hiloAdministrador(void *arg)
 				}
 			}
 			if (booleanoOpcion2){
-				printf("estoy entrando aqui\n");
-				char* pidElegido = (char*) malloc(MAXLINE);
-				char* pathArchivo = (char*) malloc(MAXLINE);
-				char* stringRespuesta = (char*) malloc(MAXLINE);
-				sprintf(pidElegido, "%d", pidLocal);				
-				strcpy(pathArchivo, "/proc/");
-				strcat(pathArchivo, pidElegido);
-				strcat(pathArchivo, "/stat");
-				/*
-				char *contenidoArchivo = readFile(pathArchivo);
-				printf("pathArchivo: %s\n", pathArchivo);
-				if (contenidoArchivo)
-				{
-					puts(contenidoArchivo);
-					free(contenidoArchivo);
-				}
-				*/
-				int resultadoArchivo = readArchivo(pathArchivo, stringRespuesta, MAXLINE);
-				if (resultadoArchivo){
-					char* stringArchivo2 = strdup(stringRespuesta);
-					char* token;
-					char* estado;
-					unsigned long minorFaults;
-					unsigned long minorFaultsWait;
-					unsigned long mayorFaults;
-					unsigned long mayorFaultsWait;
-
-					unsigned long usermode;
-					unsigned long kernelmode;
-					unsigned long usermodeWait;
-					unsigned long kernelmodeWait;
-
-					unsigned long virtualMemory;
-					/*
-					3 - estado %c
-					10 - numero de minor faults %lu
-					11 - numero de minor faults esperando hijos %lu
-
-					12 - numero de mayor faults %lu
-					13 - numero de mayor faults esperando hijos %lu
-
-					14 - tiempo en user mode %lu
-					15 - tiempo en kernel mode %lu
-
-					16 - tiempo en user mode esperando hijos %ld
-					17 - tiempo en kernel esperando hijos %ld
-
-					23 - virtual memory %lu
-
-					41 - policy %u
-
-					*/
-					//printf("stringRespuesta: %s", stringRespuesta);
-					for (int i = 0; i < 23 ; i++){
-						token = strsep(&stringArchivo2, " ");
-						if ( i == 2){
-							estado = strdup(token);
-						}else if (i == 9){
-							sscanf(token, "%lu", &minorFaults);
-						}else if( i == 10){
-							sscanf(token, "%lu", &minorFaultsWait);
-						}else if (i == 11){
-							sscanf(token, "%lu", &mayorFaults);
-						}else if (i == 12){
-							sscanf(token, "%lu", &mayorFaultsWait);
-						}else if (i == 13){
-							sscanf(token, "%lu", &usermode);
-						}else if( i == 14){
-							sscanf(token, "%lu", &kernelmode);
-							//kernelmode
-						}else if (i == 15){
-							sscanf(token, "%lu", &usermodeWait);
-
-						}else if (i == 16){
-							sscanf(token, "%lu", &kernelmodeWait);
-						}else if (i == 22){
-							sscanf(token, "%lu", &virtualMemory);
-						}
-					}
-					unsigned long totalPageFaults = minorFaults + mayorFaults + minorFaultsWait + mayorFaultsWait;
-					unsigned long totalmode = (usermode + kernelmode +usermodeWait + kernelmodeWait) / (sysconf (_SC_CLK_TCK));
-
-					printf("\nProcess information\n");
-					printf("Estate: %s\n", estado);
-					printf("Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
-					printf("Total mayor faults: %lu\n", mayorFaults + mayorFaultsWait);
-					printf("Total Page Faults: %lu\n", totalPageFaults);
-					printf("Total time spent in kernel mode: %lu seconds \n", (kernelmode + kernelmodeWait)/ (sysconf (_SC_CLK_TCK)) );
-					printf("Total time spent in user mode: %lu seconds \n", (usermode + usermodeWait)/ (sysconf (_SC_CLK_TCK)) );
-					printf("Total time of process been scheduled: %lu seconds \n", totalmode);
-					printf("Total virtual memory: %lu\n\n", virtualMemory);
-
-				}else{
-					printf("algo malo sucedio\n");
-				}
-				
-				free(pidElegido);
-				free(pathArchivo);
-				free(stringRespuesta);
-				
-
+				generarEstadisticas(pidLocal, 0);
 			}else{
 				printf("No existe proceso con ese PID\n");
 			}
@@ -585,6 +487,149 @@ void clean_stdin(void) {
     do {
      c = getchar();
     }while (c != '\n' && c != EOF);
+}
+
+void* hiloLog(void *arg){
+	printf("generar estadisticas iniciado\n");
+	while(1){
+		//printf("entrando\n");
+		int numberProcess = counterPids;
+		int counterProcess = 1;
+		for (int i = 0; i < numberProcess; i++){
+			if (pids[i] >= 0){
+				counterProcess++;
+				generarEstadisticas(pids[i], 1);
+			}
+		}
+		sleep(10);
+				
+			
+	}
+
+}
+
+void generarEstadisticas(int pidLocal, int modo){
+	/*
+	modo 0 -> x consola
+	modo 1 -> a archivo
+	*/
+	//printf("estoy entrando aqui\n");
+	char* pidElegido = (char*) malloc(MAXLINE);
+	char* pathArchivo = (char*) malloc(MAXLINE);
+	char* stringRespuesta = (char*) malloc(MAXLINE);
+	sprintf(pidElegido, "%d", pidLocal);				
+	strcpy(pathArchivo, "/proc/");
+	strcat(pathArchivo, pidElegido);
+	strcat(pathArchivo, "/stat");
+	/*
+	char *contenidoArchivo = readFile(pathArchivo);
+	printf("pathArchivo: %s\n", pathArchivo);
+	if (contenidoArchivo)
+	{
+		puts(contenidoArchivo);
+		free(contenidoArchivo);
+	}
+	*/
+	int resultadoArchivo = readArchivo(pathArchivo, stringRespuesta, MAXLINE);
+	if (resultadoArchivo){
+		char* stringArchivo2 = strdup(stringRespuesta);
+		char* token;
+		char* estado;
+		unsigned long minorFaults;
+		unsigned long minorFaultsWait;
+		unsigned long mayorFaults;
+		unsigned long mayorFaultsWait;
+
+		unsigned long usermode;
+		unsigned long kernelmode;
+		unsigned long usermodeWait;
+		unsigned long kernelmodeWait;
+
+		unsigned long virtualMemory;
+		/*
+		3 - estado %c
+		10 - numero de minor faults %lu
+		11 - numero de minor faults esperando hijos %lu
+
+		12 - numero de mayor faults %lu
+		13 - numero de mayor faults esperando hijos %lu
+
+		14 - tiempo en user mode %lu
+		15 - tiempo en kernel mode %lu
+
+		16 - tiempo en user mode esperando hijos %ld
+		17 - tiempo en kernel esperando hijos %ld
+
+		23 - virtual memory %lu
+
+		41 - policy %u
+
+		*/
+		//printf("stringRespuesta: %s", stringRespuesta);
+		for (int i = 0; i < 23 ; i++){
+			token = strsep(&stringArchivo2, " ");
+			if ( i == 2){
+				estado = strdup(token);
+			}else if (i == 9){
+				sscanf(token, "%lu", &minorFaults);
+			}else if( i == 10){
+				sscanf(token, "%lu", &minorFaultsWait);
+			}else if (i == 11){
+				sscanf(token, "%lu", &mayorFaults);
+			}else if (i == 12){
+				sscanf(token, "%lu", &mayorFaultsWait);
+			}else if (i == 13){
+				sscanf(token, "%lu", &usermode);
+			}else if( i == 14){
+				sscanf(token, "%lu", &kernelmode);
+				//kernelmode
+			}else if (i == 15){
+				sscanf(token, "%lu", &usermodeWait);
+
+			}else if (i == 16){
+				sscanf(token, "%lu", &kernelmodeWait);
+			}else if (i == 22){
+				sscanf(token, "%lu", &virtualMemory);
+			}
+		}
+		unsigned long totalPageFaults = minorFaults + mayorFaults + minorFaultsWait + mayorFaultsWait;
+		unsigned long totalmode = (usermode + kernelmode +usermodeWait + kernelmodeWait) / (sysconf (_SC_CLK_TCK));
+
+		if (!modo){
+			printf("\nProcess information\n");
+			printf("State: %s\n", estado);
+			printf("Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
+			printf("Total mayor faults: %lu\n", mayorFaults + mayorFaultsWait);
+			printf("Total Page Faults: %lu\n", totalPageFaults);
+			printf("Total time spent in kernel mode: %lu seconds \n", (kernelmode + kernelmodeWait)/ (sysconf (_SC_CLK_TCK)) );
+			printf("Total time spent in user mode: %lu seconds \n", (usermode + usermodeWait)/ (sysconf (_SC_CLK_TCK)) );
+			printf("Total time of process been scheduled: %lu seconds \n", totalmode);
+			printf("Total virtual memory: %lu\n\n", virtualMemory);
+		}else{
+			FILE *pFile;
+			pFile = fopen("logFile.txt","a");
+			fprintf(pFile,"\nProcess information with pid %d\n",pidLocal);
+			fprintf(pFile,"State: %s\n", estado);
+			fprintf(pFile,"Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
+			fprintf(pFile,"Total mayor faults: %lu\n", mayorFaults + mayorFaultsWait);
+			fprintf(pFile,"Total Page Faults: %lu\n", totalPageFaults);
+			fprintf(pFile,"Total time spent in kernel mode: %lu seconds \n", (kernelmode + kernelmodeWait)/ (sysconf (_SC_CLK_TCK)) );
+			fprintf(pFile,"Total time spent in user mode: %lu seconds \n", (usermode + usermodeWait)/ (sysconf (_SC_CLK_TCK)) );
+			fprintf(pFile,"Total time of process been scheduled: %lu seconds \n", totalmode);
+			fprintf(pFile,"Total virtual memory: %lu\n\n", virtualMemory);
+			fclose(pFile);
+		}
+
+
+	}else{
+		printf("algo malo sucedio\n");
+	}
+	
+	free(pidElegido);
+	free(pathArchivo);
+	free(stringRespuesta);
+	
+
 }
 
 
