@@ -10,6 +10,11 @@ void quitNewCharacterLineInput(char *str);
 char* compilesAndExecuteFile(informacion_cliente* infoUsuario);
 char* definirNombreEjecutable(char* nombreOriginal);
 void* hiloAdministrador(void *arg);
+void* hiloRecogedor(void * arg);
+void manejadorSennales(int pid, int sennal);
+void  SIGINT_handler(int);   
+void  SIGQUIT_handler(int);
+void clean_stdin(void);
 //char* readFile(char *filename);
 int readArchivo(char* path, char* resultado, int resultadoSize);
 
@@ -35,8 +40,10 @@ int main(int argc, char **argv)
 	pid_t pid;
 	int status;
 	int statusThread;
+	//int trashThread;
 
 	statusThread = pthread_create(&tid, NULL, &hiloAdministrador, NULL);
+	//trashThread = pthread_create(&tid2, NULL, &hiloRecogedor, NULL);
 
 	if (argc != 2) {
 		fprintf(stderr, "usage: %s <port>\n", argv[0]);
@@ -326,7 +333,9 @@ void* hiloAdministrador(void *arg)
 	//logs cada cierto tiempo
 
 	while (1){
-		int opcion1, opcion2;
+		int opcion1 = 0;
+		int opcion2 = 0;
+		int opcion3 = 0;
 		printf("A continuación las opciones\n");
 		printf("1) Ver pids de los procesos involucrados\n");
 		printf("2) Ver información de un proceso\n");
@@ -334,34 +343,38 @@ void* hiloAdministrador(void *arg)
 		printf("4) Cualquier otra opción para salir\n");
 
 		scanf("%d", &opcion1);
+		clean_stdin();
 		printf("su opcion fue: %d\n", opcion1);
-		//quitNewCharacterLineInput(opcion1);
-
 		if (opcion1 == 1){
 			sem_wait(&mutex);
 			int numberProcess = counterPids;
 			sem_post(&mutex);
+			int counterProcess = 1;
 			for (int i = 0; i < numberProcess; i++){
 				sem_wait(&mutex);
-				printf("proceso %d: pid %d \n", i , pids[i]);
+				if (pids[i] >= 0){
+					printf("proceso %d: pid %d \n", counterProcess , pids[i]);
+					counterProcess++;
+				}
+				
 				sem_post(&mutex);
 			}
-		} else if(opcion1 == 2){
+		}else if (opcion1 == 2){
 			printf("Ingrese el PID del proceso\n");
 			scanf("%d", &opcion2);
+			clean_stdin();
 			int pidLocal;
-			sem_wait(&mutex);
 			int numberProcess = counterPids;
-			sem_post(&mutex);
 			for (int i = 0; i < numberProcess; i++){
-				sem_wait(&mutex);
+				
 				if (pids[i] == opcion2){
 					printf("Su proceso existe\n");
+					sem_wait(&mutex);
 					pidLocal = pids[i];
+					sem_post(&mutex);
 					booleanoOpcion2 = 1;
 					break;
 				}
-				sem_post(&mutex);
 			}
 			if (booleanoOpcion2){
 				printf("estoy entrando aqui\n");
@@ -385,6 +398,7 @@ void* hiloAdministrador(void *arg)
 				if (resultadoArchivo){
 					char* stringArchivo2 = strdup(stringRespuesta);
 					char* token;
+					char* estado;
 					unsigned long minorFaults;
 					unsigned long minorFaultsWait;
 					unsigned long mayorFaults;
@@ -397,6 +411,7 @@ void* hiloAdministrador(void *arg)
 
 					unsigned long virtualMemory;
 					/*
+					3 - estado %c
 					10 - numero de minor faults %lu
 					11 - numero de minor faults esperando hijos %lu
 
@@ -417,7 +432,9 @@ void* hiloAdministrador(void *arg)
 					//printf("stringRespuesta: %s", stringRespuesta);
 					for (int i = 0; i < 23 ; i++){
 						token = strsep(&stringArchivo2, " ");
-						if (i == 9){
+						if ( i == 2){
+							estado = strdup(token);
+						}else if (i == 9){
 							sscanf(token, "%lu", &minorFaults);
 						}else if( i == 10){
 							sscanf(token, "%lu", &minorFaultsWait);
@@ -443,6 +460,7 @@ void* hiloAdministrador(void *arg)
 					unsigned long totalmode = (usermode + kernelmode +usermodeWait + kernelmodeWait) / (sysconf (_SC_CLK_TCK));
 
 					printf("\nProcess information\n");
+					printf("Estate: %s\n", estado);
 					printf("Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
 					printf("Total mayor faults: %lu\n", mayorFaults + mayorFaultsWait);
 					printf("Total Page Faults: %lu\n", totalPageFaults);
@@ -458,12 +476,49 @@ void* hiloAdministrador(void *arg)
 				free(pidElegido);
 				free(pathArchivo);
 				free(stringRespuesta);
+				
 
 			}else{
 				printf("No existe proceso con ese PID\n");
 			}
 
 
+
+		}else if (opcion1 == 3){
+			printf("Ingrese el PID del proceso\n");
+			scanf("%d", &opcion2);
+			clean_stdin();
+			int pidLocal;
+			int numberProcess = counterPids;
+			for (int i = 0; i < numberProcess; i++){				
+				if (pids[i] == opcion2){
+					printf("Su proceso existe\n");
+					sem_wait(&mutex);
+					pidLocal = pids[i];
+					sem_post(&mutex);
+					booleanoOpcion2 = 1;
+					break;
+				}
+				
+			}
+			if (booleanoOpcion2){
+				printf("ingrese señal a enviar\n");
+				printf("1) SIG_INT\n");
+				printf("2) SIG_STP\n");
+				printf("3) SIG_CONT\n");
+				scanf("%d",&opcion3);
+				clean_stdin();
+				manejadorSennales(pidLocal, opcion3);
+				
+
+
+
+
+
+
+			}else{
+				printf("No existe proceso con ese PID\n");
+			}
 
 		}else{
 			printf("Ha salido del modo administrador\n");
@@ -489,6 +544,49 @@ int readArchivo(char* path, char* resultado, int resultadoSize){
 	
 	
 }
+
+void manejadorSennales(int pid, int sennal){
+	if (sennal == 1){
+		int returnStatus = 0;
+		kill(pid, SIGINT);
+        printf("Sent a SIGINT signal to process with PID: %d\n", pid);
+		waitpid(pid, &returnStatus, 0);
+		int numberProcess = counterPids;
+		for (int i = 0; i < numberProcess; i++){
+			
+			if (pids[i] == pid){
+				sem_wait(&mutex);
+				pids[i] = -1;
+				sem_post(&mutex);
+				break;
+			}
+			
+		}
+		
+		printf("ha terminado\n");
+
+	}else if(sennal == 2){
+		kill(pid, SIGSTOP);
+        printf("Sent a SIGSTOP signal to process with PID: %d\n", pid);
+
+	}else if (sennal == 3){
+		kill(pid, SIGCONT );
+        printf("Sent a SIGCONT signal to process with PID: %d\n", pid);
+
+	}else{
+		printf("No existe ninguna de esas opciones\n");
+	}
+
+}
+
+void clean_stdin(void) {
+    //printf("Se va a limpiar el buffer.\n");
+    int c;
+    do {
+     c = getchar();
+    }while (c != '\n' && c != EOF);
+}
+
 
 
 
