@@ -26,6 +26,9 @@ int orden_llegada = 0;
 int counterPids = 0;
 pthread_t tid,tid2;
 
+int time_limit = 100;
+int pages_limits = 5000;
+
 int main(int argc, char **argv)
 {
 	int listenfd, connfd;
@@ -102,6 +105,16 @@ int main(int argc, char **argv)
 
 			createFileAndSaveIt(connfd, &infoUsuario);
 			Close(connfd);
+			time_t rawtime;
+			struct tm * timeinfo;
+			time ( &rawtime );
+			timeinfo = localtime ( &rawtime );
+			char* timeInfo = strdup(asctime (timeinfo));
+			quitNewCharacterLineInput(timeInfo);
+			FILE *pFile2;
+			pFile2 = fopen("logFile_warnings.txt","a");
+			fprintf(pFile2,"%s: Process with pid %d has finished correctly\n", getpid());
+			fclose(pFile2);
 			exit(3);
 
 		}else{ //parent
@@ -327,7 +340,6 @@ void quitNewCharacterLineInput(char *str){
 void* hiloAdministrador(void *arg)
 {
 	printf("Bienvenidos al menu de administracion de procesos\n");
-	printf ("_SC_CLK_TCK = %ld\n", sysconf (_SC_CLK_TCK)); 
 	int booleanoOpcion2 = 0;
 	//sched_setaffinity() http://www.tutorialspoint.com/unix_system_calls/sched_setaffinity.htm
 	//logs 
@@ -448,6 +460,14 @@ int readArchivo(char* path, char* resultado, int resultadoSize){
 }
 
 void manejadorSennales(int pid, int sennal){
+	time_t rawtime;
+	struct tm * timeinfo;
+	time ( &rawtime );
+	timeinfo = localtime ( &rawtime );
+	char* timeInfo = strdup(asctime (timeinfo));
+	quitNewCharacterLineInput(timeInfo);
+	FILE *pFile2;
+	pFile2 = fopen("logFile_warnings.txt","a");
 	if (sennal == 1){
 		int returnStatus = 0;
 		kill(pid, SIGINT);
@@ -465,19 +485,24 @@ void manejadorSennales(int pid, int sennal){
 			
 		}
 		
-		printf("ha terminado\n");
+		
+		fprintf(pFile2,"%s: Process with pid %d has been finished with SIGINT signal\n",timeInfo, pid);
+		
 
 	}else if(sennal == 2){
 		kill(pid, SIGSTOP);
         printf("Sent a SIGSTOP signal to process with PID: %d\n", pid);
+		fprintf(pFile2,"%s: Process with pid %d has been paused with SIGSTOP signal\n",timeInfo, pid);
 
 	}else if (sennal == 3){
 		kill(pid, SIGCONT );
         printf("Sent a SIGCONT signal to process with PID: %d\n", pid);
+		fprintf(pFile2,"%s: Process with pid %d has been continued with SIGCONT signal\n",timeInfo, pid);
 
 	}else{
 		printf("No existe ninguna de esas opciones\n");
 	}
+	fclose(pFile2);
 
 }
 
@@ -595,7 +620,16 @@ void generarEstadisticas(int pidLocal, int modo){
 		unsigned long totalPageFaults = minorFaults + mayorFaults + minorFaultsWait + mayorFaultsWait;
 		unsigned long totalmode = (usermode + kernelmode +usermodeWait + kernelmodeWait) / (sysconf (_SC_CLK_TCK));
 
+		time_t rawtime;
+		struct tm * timeinfo;
+		time ( &rawtime );
+		timeinfo = localtime ( &rawtime );
+		char* timeInfo = strdup(asctime (timeinfo));
+		quitNewCharacterLineInput(timeInfo);
+		
+
 		if (!modo){
+			printf("Current local time and date: %s", asctime (timeinfo));
 			printf("\nProcess information\n");
 			printf("State: %s\n", estado);
 			printf("Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
@@ -606,11 +640,7 @@ void generarEstadisticas(int pidLocal, int modo){
 			printf("Total time of process been scheduled: %lu seconds \n", totalmode);
 			printf("Total virtual memory: %lu\n\n", virtualMemory);
 		}else{
-			FILE *pFile;
-			time_t rawtime;
-			struct tm * timeinfo;
-			time ( &rawtime );
-			timeinfo = localtime ( &rawtime );			
+			FILE *pFile;		
 			pFile = fopen("logFile.txt","a");
 			fprintf(pFile,"Current local time and date: %s", asctime (timeinfo));
 			fprintf(pFile,"Process information with pid %d\n",pidLocal);
@@ -623,6 +653,20 @@ void generarEstadisticas(int pidLocal, int modo){
 			fprintf(pFile,"Total time of process been scheduled: %lu seconds \n", totalmode);
 			fprintf(pFile,"Total virtual memory: %lu\n\n", virtualMemory);
 			fclose(pFile);
+		}
+
+		if (totalPageFaults > pages_limits){
+			FILE *pFile2;
+			pFile2 = fopen("logFile_warnings.txt","a");
+			fprintf(pFile2,"%s: Process with pid %d has now more than %d page faults: %d total page faults \n",timeInfo, pidLocal, pages_limits, totalPageFaults);
+			fclose(pFile2);
+		}
+
+		if (totalmode > time_limit){
+			FILE *pFile2;
+			pFile2 = fopen("logFile_warnings.txt","a");
+			fprintf(pFile2,"%s: Process with pid %d has been scheduled for more than %d seconds: %d total seconds \n",timeInfo, pidLocal, time_limit, totalmode);
+			fclose(pFile2);
 		}
 
 
