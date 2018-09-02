@@ -607,8 +607,13 @@ void generarEstadisticas(int pidLocal, int modo){
 			printf("Total virtual memory: %lu\n\n", virtualMemory);
 		}else{
 			FILE *pFile;
+			time_t rawtime;
+			struct tm * timeinfo;
+			time ( &rawtime );
+			timeinfo = localtime ( &rawtime );			
 			pFile = fopen("logFile.txt","a");
-			fprintf(pFile,"\nProcess information with pid %d\n",pidLocal);
+			fprintf(pFile,"Current local time and date: %s", asctime (timeinfo));
+			fprintf(pFile,"Process information with pid %d\n",pidLocal);
 			fprintf(pFile,"State: %s\n", estado);
 			fprintf(pFile,"Total minor Faults: %lu\n", minorFaults + minorFaultsWait);
 			fprintf(pFile,"Total mayor faults: %lu\n", mayorFaults + mayorFaultsWait);
