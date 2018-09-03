@@ -1,9 +1,11 @@
+#define _GNU_SOURCE
 #include "csapp.h"
 #include "string.h"
 #include "projecto.h"
 #include <time.h>
 #include <sys/resource.h>
 #include <sys/times.h> 
+#include <sched.h> 
 
 void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario);
 void quitNewCharacterLineInput(char *str);
@@ -15,17 +17,18 @@ void manejadorSennales(int pid, int sennal);
 void  SIGINT_handler(int);   
 void  SIGQUIT_handler(int);
 void clean_stdin(void);
-//char* readFile(char *filename);
 int readArchivo(char* path, char* resultado, int resultadoSize);
 void generarEstadisticas(int pidLocal, int modo);
+int generarYSetearAfinidad(int pid);
 
 sem_t mutex;
+sem_t mutexAfinity;
 informacion_cliente tablaUsuarios[10000];
 pid_t pids[10000];
+static int booleansAfinity[10000];
 int orden_llegada = 0;
 int counterPids = 0;
 pthread_t tid,tid2;
-
 int time_limit = 100;
 int pages_limits = 5000;
 
@@ -40,6 +43,7 @@ int main(int argc, char **argv)
 	//sem_wait (&mutex);
 	//sem_post (&mutex);
 	sem_init(&mutex,1, 1);
+	sem_init(&mutexAfinity,1,1);
 	time_t when;
 	pid_t pid;
 	int status;
@@ -95,14 +99,7 @@ int main(int argc, char **argv)
 			infoUsuario.tiempo_envio = timestamp;
 			infoUsuario.orden_llegada = orden_llegada;
 			tablaUsuarios[orden_llegada] = infoUsuario;
-			
-
-
 			sem_post (&mutex);
-
-
-			
-
 			createFileAndSaveIt(connfd, &infoUsuario);
 			Close(connfd);
 			time_t rawtime;
@@ -113,7 +110,7 @@ int main(int argc, char **argv)
 			quitNewCharacterLineInput(timeInfo);
 			FILE *pFile2;
 			pFile2 = fopen("logFile_warnings.txt","a");
-			fprintf(pFile2,"%s: Process with pid %d has finished correctly\n", getpid());
+			fprintf(pFile2,"%s: Process with pid %d has finished correctly\n",timeInfo, getpid());
 			fclose(pFile2);
 			exit(3);
 
@@ -355,7 +352,6 @@ void* hiloAdministrador(void *arg)
 		printf("2) Ver información de un proceso\n");
 		printf("3) Parar o Matar un proceso específico\n");
 		printf("4) Cualquier otra opción para salir\n");
-
 		scanf("%d", &opcion1);
 		clean_stdin();
 		printf("su opcion fue: %d\n", opcion1);
@@ -369,36 +365,10 @@ void* hiloAdministrador(void *arg)
 				if (pids[i] >= 0){
 					printf("proceso %d: pid %d \n", counterProcess , pids[i]);
 					counterProcess++;
-				}
-				
+				}				
 				sem_post(&mutex);
 			}
 		}else if (opcion1 == 2){
-			printf("Ingrese el PID del proceso\n");
-			scanf("%d", &opcion2);
-			clean_stdin();
-			int pidLocal;
-			int numberProcess = counterPids;
-			for (int i = 0; i < numberProcess; i++){
-				
-				if (pids[i] == opcion2){
-					printf("Su proceso existe\n");
-					sem_wait(&mutex);
-					pidLocal = pids[i];
-					sem_post(&mutex);
-					booleanoOpcion2 = 1;
-					break;
-				}
-			}
-			if (booleanoOpcion2){
-				generarEstadisticas(pidLocal, 0);
-			}else{
-				printf("No existe proceso con ese PID\n");
-			}
-
-
-
-		}else if (opcion1 == 3){
 			printf("Ingrese el PID del proceso\n");
 			scanf("%d", &opcion2);
 			clean_stdin();
@@ -413,7 +383,27 @@ void* hiloAdministrador(void *arg)
 					booleanoOpcion2 = 1;
 					break;
 				}
-				
+			}
+			if (booleanoOpcion2){
+				generarEstadisticas(pidLocal, 0);
+			}else{
+				printf("No existe proceso con ese PID\n");
+			}
+		}else if (opcion1 == 3){
+			printf("Ingrese el PID del proceso\n");
+			scanf("%d", &opcion2);
+			clean_stdin();
+			int pidLocal;
+			int numberProcess = counterPids;
+			for (int i = 0; i < numberProcess; i++){				
+				if (pids[i] == opcion2){
+					printf("Su proceso existe\n");
+					sem_wait(&mutex);
+					pidLocal = pids[i];
+					sem_post(&mutex);
+					booleanoOpcion2 = 1;
+					break;
+				}				
 			}
 			if (booleanoOpcion2){
 				printf("ingrese señal a enviar\n");
@@ -423,17 +413,9 @@ void* hiloAdministrador(void *arg)
 				scanf("%d",&opcion3);
 				clean_stdin();
 				manejadorSennales(pidLocal, opcion3);
-				
-
-
-
-
-
-
 			}else{
 				printf("No existe proceso con ese PID\n");
 			}
-
 		}else{
 			printf("Ha salido del modo administrador\n");
 			break;
@@ -524,6 +506,17 @@ void* hiloLog(void *arg){
 			if (pids[i] >= 0){
 				counterProcess++;
 				generarEstadisticas(pids[i], 1);
+				if (booleansAfinity[i] != 1){
+					int valorDeSetear = generarYSetearAfinidad(pids[i]);
+					if (valorDeSetear == 1){
+						sem_wait(&mutexAfinity);
+						booleansAfinity[i] = 1;
+						sem_post(&mutexAfinity);
+
+					}
+
+				}
+
 			}
 		}
 		sleep(10);
@@ -590,7 +583,6 @@ void generarEstadisticas(int pidLocal, int modo){
 		41 - policy %u
 
 		*/
-		//printf("stringRespuesta: %s", stringRespuesta);
 		for (int i = 0; i < 23 ; i++){
 			token = strsep(&stringArchivo2, " ");
 			if ( i == 2){
@@ -607,10 +599,8 @@ void generarEstadisticas(int pidLocal, int modo){
 				sscanf(token, "%lu", &usermode);
 			}else if( i == 14){
 				sscanf(token, "%lu", &kernelmode);
-				//kernelmode
 			}else if (i == 15){
 				sscanf(token, "%lu", &usermodeWait);
-
 			}else if (i == 16){
 				sscanf(token, "%lu", &kernelmodeWait);
 			}else if (i == 22){
@@ -658,14 +648,14 @@ void generarEstadisticas(int pidLocal, int modo){
 		if (totalPageFaults > pages_limits){
 			FILE *pFile2;
 			pFile2 = fopen("logFile_warnings.txt","a");
-			fprintf(pFile2,"%s: Process with pid %d has now more than %d page faults: %d total page faults \n",timeInfo, pidLocal, pages_limits, totalPageFaults);
+			fprintf(pFile2,"%s: Process with pid %d has now more than %d page faults: %lu total page faults \n",timeInfo, pidLocal, pages_limits, totalPageFaults);
 			fclose(pFile2);
 		}
 
 		if (totalmode > time_limit){
 			FILE *pFile2;
 			pFile2 = fopen("logFile_warnings.txt","a");
-			fprintf(pFile2,"%s: Process with pid %d has been scheduled for more than %d seconds: %d total seconds \n",timeInfo, pidLocal, time_limit, totalmode);
+			fprintf(pFile2,"%s: Process with pid %d has been scheduled for more than %d seconds: %lu total seconds \n",timeInfo, pidLocal, time_limit, totalmode);
 			fclose(pFile2);
 		}
 
@@ -679,6 +669,41 @@ void generarEstadisticas(int pidLocal, int modo){
 	free(stringRespuesta);
 	
 
+}
+
+int generarYSetearAfinidad(int pid){
+	// cpu_set_t: This data set is a bitset where each bit represents a CPU.
+	cpu_set_t cpuset;
+	cpu_set_t cpuset2;
+	int valueReturn = 1;
+
+	int get_affinity = sched_getaffinity(pid, sizeof(cpu_set_t), &cpuset);
+	if (get_affinity != 0){
+		valueReturn = 0;
+	}else{
+		int numberCores = CPU_COUNT(&cpuset);
+		CPU_ZERO(&cpuset2);
+		int assignedCore = (counterPids - 1) % numberCores;
+		CPU_SET(assignedCore, &cpuset2);
+		int set_result = sched_setaffinity(pid, sizeof(cpu_set_t), &cpuset2);
+		if (set_result != 0) {
+		
+			valueReturn = 0;
+		}else{
+			time_t rawtime;
+			struct tm * timeinfo;
+			time ( &rawtime );
+			timeinfo = localtime ( &rawtime );
+			char* timeInfo = strdup(asctime (timeinfo));
+			quitNewCharacterLineInput(timeInfo);
+			FILE *pFile;		
+			pFile = fopen("logFile_warnings.txt","a");
+			fprintf(pFile,"%s: Process with pid %d has been assigned to core %d \n",timeInfo, pid, assignedCore);
+			fclose(pFile);
+		}
+
+	}
+	return valueReturn;
 }
 
 
