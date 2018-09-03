@@ -40,7 +40,7 @@ void dns_error(char *msg)
     exit(0);
 }
 
-void gai_error(int code, char *msg) /* Getaddrinfo-style error */
+void Gai_error(int code, char *msg) /* Getaddrinfo-style error */
 {
     fprintf(stderr, "%s: %s\n", msg, gai_strerror(code));
     exit(0);
@@ -587,7 +587,7 @@ void Getaddrinfo(const char *node, const char *service,
     int rc;
 
     if ((rc = getaddrinfo(node, service, hints, res)) != 0) 
-        gai_error(rc, "Getaddrinfo error");
+        Gai_error(rc, "Getaddrinfo error");
 }
 
 void Getnameinfo(const struct sockaddr *sa, socklen_t salen, char *host, 
@@ -597,7 +597,7 @@ void Getnameinfo(const struct sockaddr *sa, socklen_t salen, char *host,
 
     if ((rc = getnameinfo(sa, salen, host, hostlen, serv, 
                           servlen, flags)) != 0) 
-        gai_error(rc, "Getnameinfo error");
+        Gai_error(rc, "Getnameinfo error");
 }
 
 void Freeaddrinfo(struct addrinfo *res)
