@@ -91,11 +91,11 @@ int main(int argc, char **argv)
 			hp = Gethostbyaddr((const char *)&clientaddr.sin_addr.s_addr,
 						sizeof(clientaddr.sin_addr.s_addr), AF_INET);
 			haddrp = inet_ntoa(clientaddr.sin_addr);
-			printf("server connected to %s (%s)\n", hp->h_name, haddrp);
+			//printf("server connected to %s (%s)\n", hp->h_name, haddrp);
 
 			sem_wait (&mutex);
 			pid_t localPid = getpid();
-			printf("local pid: %d\n", localPid);
+			//printf("local pid: %d\n", localPid);
 			pids[counterPids] = localPid;
 			counterPids++;
 			orden_llegada++;
@@ -125,43 +125,14 @@ int main(int argc, char **argv)
 			exit(3);
 
 		}else{ //parent
-			printf("\nenter here\n");
-			printf("pid: %d\n", pid);
+			//printf("\nenter here\n");
+			//printf("pid: %d\n", pid);
 			pids[counterPids] = pid;
 			counterPids++;			
-			printf("counterPids: %d\n", counterPids);
+			//printf("counterPids: %d\n", counterPids);
 			for ( int i = 0;i < counterPids; i++){
-				printf("procesos activos: %d\n", pids[i]);
+				//printf("procesos activos: %d\n", pids[i]);
 			}
-			/*
-			end_id = waitpid(pid, &status, 0 );
-			//end_id = waitpid(pid, &status, WNOHANG|WUNTRACED );
-			printf("end_id:%d\npid: %d\ncounterPid: %d\n", end_id, pid, counterPids);
-			for ( int i = 0;i < counterPids; i++){
-				printf("procesos activos: %d\n", pids[i]);
-			}
-			time(&when);
-			if (end_id == -1) {            // error calling waitpid       
-				perror("waitpid error");
-				exit(EXIT_FAILURE);
-			}
-			else if (end_id == 0) {        // child still running         
-				time(&when);
-				printf("Parent waiting for child at %s", ctime(&when));
-				//sleep(1);
-			}
-			else if (end_id == pid) {  // child ended                 
-				if (WIFEXITED(status))
-					printf("Child ended normally\n");
-				else if (WIFSIGNALED(status))
-					printf("Child ended because of an uncaught signal\n");
-				else if (WIFSTOPPED(status))
-					printf("Child process has stopped\n");
-				exit(EXIT_SUCCESS);
-			}
-			*/
-
-
 		}
 
 
@@ -204,9 +175,10 @@ void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 	infoUsuario->nombre_original = archivoNombre;
 	sem_post (&mutex);
 
+	/*
 	printf("identificador Cliente: %s \n", identificadorCliente);
 	printf("archivoNombre: %s\n", archivoNombre);
-	printf("nombreArchivo: %s\n", nombreArchivo);
+	printf("nombreArchivo: %s\n", nombreArchivo);*/
 	
 	FILE *archivoCreado;
 	
@@ -225,7 +197,7 @@ void createFileAndSaveIt(int connfd, informacion_cliente* infoUsuario){
 	sem_wait (&mutex);
 	infoUsuario->respuesta = mensaje;
 	sem_post (&mutex);
-	printf("este es mensaje: %s \n", mensaje);
+	//printf("este es mensaje: %s \n", mensaje);
 
 	Rio_writen(connfd, "Inicio (comunicacion)\n" , strlen("Inicio (comunicacion)\n"));
 	Rio_writen(connfd, mensaje , strlen(mensaje));
@@ -266,7 +238,7 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	sem_post(&mutex);
 	sprintf(usuarioStr, "%d", usuario);
 
-	printf("nombreOriginal: %s\n", nombreOriginal);
+	//printf("nombreOriginal: %s\n", nombreOriginal);
 
 	strcpy(rutaEjecutable, "Executables/");
 	strcat(rutaEjecutable, usuarioStr);
@@ -274,7 +246,7 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	strcat(rutaEjecutable, nombreOriginal);
 	strcat(rutaEjecutable, "out");
 
-	printf("ruta ejecutable es: %s\n", rutaEjecutable);
+	//printf("ruta ejecutable es: %s\n", rutaEjecutable);
 	sem_wait (&mutex);
 	infoUsuario->ruta_archivo_ejecutable = rutaEjecutable;
 	sem_post (&mutex);
@@ -293,7 +265,7 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	*/
 	
 	
-	printf("este es comando compilacion: %s\n", comandoCompilacion);
+	//printf("este es comando compilacion: %s\n", comandoCompilacion);
 
 	int status = system(comandoCompilacion);
 
@@ -302,7 +274,7 @@ char* compilesAndExecuteFile(informacion_cliente* infoUsuario){
 	}else{
 		strcpy(comandoEjecucion, "./");
 		strcat(comandoEjecucion, rutaEjecutable);
-		printf("este es comando ejecucion: %s\n", comandoEjecucion);
+		//printf("este es comando ejecucion: %s\n", comandoEjecucion);
 		strcat(mensaje,"");
 		fp = popen(comandoEjecucion, "r");
 		if (fp == NULL) {
