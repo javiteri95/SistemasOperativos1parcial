@@ -4,3 +4,207 @@ Sun Sep  2 18:00:15 2018: Process with pid 7026 has been scheduled for more than
 Sun Sep  2 18:00:25 2018: Process with pid 7026 has been scheduled for more than 100 seconds: 114 total seconds 
 Sun Sep  2 18:00:35 2018: Process with pid 7026 has been scheduled for more than 100 seconds: 124 total seconds 
 Sun Sep  2 18:00:45 2018: Process with pid 7026 has been finished with SIGINT signal
+Sun Sep  2 20:30:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 101 total seconds 
+Sun Sep  2 20:30:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 111 total seconds 
+Sun Sep  2 20:31:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 121 total seconds 
+Sun Sep  2 20:31:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 131 total seconds 
+Sun Sep  2 20:31:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 141 total seconds 
+Sun Sep  2 20:31:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 151 total seconds 
+Sun Sep  2 20:31:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 161 total seconds 
+Sun Sep  2 20:31:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 171 total seconds 
+Sun Sep  2 20:32:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 181 total seconds 
+Sun Sep  2 20:32:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 191 total seconds 
+Sun Sep  2 20:32:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 201 total seconds 
+Sun Sep  2 20:32:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 211 total seconds 
+Sun Sep  2 20:32:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 221 total seconds 
+Sun Sep  2 20:32:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 231 total seconds 
+Sun Sep  2 20:33:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 241 total seconds 
+Sun Sep  2 20:33:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 251 total seconds 
+Sun Sep  2 20:33:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 261 total seconds 
+Sun Sep  2 20:33:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 271 total seconds 
+Sun Sep  2 20:33:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 281 total seconds 
+Sun Sep  2 20:33:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 291 total seconds 
+Sun Sep  2 20:34:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 301 total seconds 
+Sun Sep  2 20:34:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 311 total seconds 
+Sun Sep  2 20:34:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 321 total seconds 
+Sun Sep  2 20:34:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 331 total seconds 
+Sun Sep  2 20:34:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 341 total seconds 
+Sun Sep  2 20:34:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 351 total seconds 
+Sun Sep  2 20:35:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 361 total seconds 
+Sun Sep  2 20:35:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 371 total seconds 
+Sun Sep  2 20:35:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 381 total seconds 
+Sun Sep  2 20:35:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 391 total seconds 
+Sun Sep  2 20:35:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 401 total seconds 
+Sun Sep  2 20:35:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 411 total seconds 
+Sun Sep  2 20:36:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 421 total seconds 
+Sun Sep  2 20:36:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 431 total seconds 
+Sun Sep  2 20:36:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 441 total seconds 
+Sun Sep  2 20:36:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 451 total seconds 
+Sun Sep  2 20:36:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 461 total seconds 
+Sun Sep  2 20:36:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 471 total seconds 
+Sun Sep  2 20:37:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 481 total seconds 
+Sun Sep  2 20:37:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 491 total seconds 
+Sun Sep  2 20:37:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 501 total seconds 
+Sun Sep  2 20:37:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 511 total seconds 
+Sun Sep  2 20:37:46 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 521 total seconds 
+Sun Sep  2 20:37:56 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 531 total seconds 
+Sun Sep  2 20:38:06 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 541 total seconds 
+Sun Sep  2 20:38:16 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 551 total seconds 
+Sun Sep  2 20:38:26 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 561 total seconds 
+Sun Sep  2 20:38:36 2018: Process with pid 10479 has been scheduled for more than 100 seconds: 571 total seconds 
+Sun Sep  2 20:53:02 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 106 total seconds 
+Sun Sep  2 20:53:12 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 116 total seconds 
+Sun Sep  2 20:53:22 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 126 total seconds 
+Sun Sep  2 20:53:32 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 136 total seconds 
+Sun Sep  2 20:53:42 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 146 total seconds 
+Sun Sep  2 20:53:52 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 156 total seconds 
+Sun Sep  2 20:54:02 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 166 total seconds 
+Sun Sep  2 20:54:12 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 176 total seconds 
+Sun Sep  2 20:54:22 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 186 total seconds 
+Sun Sep  2 20:54:32 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 196 total seconds 
+Sun Sep  2 20:54:42 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 206 total seconds 
+Sun Sep  2 20:54:52 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 216 total seconds 
+Sun Sep  2 20:55:02 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 226 total seconds 
+Sun Sep  2 20:55:12 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 236 total seconds 
+Sun Sep  2 20:55:22 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 246 total seconds 
+Sun Sep  2 20:55:32 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 256 total seconds 
+Sun Sep  2 20:55:42 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 266 total seconds 
+Sun Sep  2 20:55:52 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 276 total seconds 
+Sun Sep  2 20:56:02 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 286 total seconds 
+Sun Sep  2 20:56:12 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 296 total seconds 
+Sun Sep  2 20:56:22 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 306 total seconds 
+Sun Sep  2 20:56:32 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 316 total seconds 
+Sun Sep  2 20:56:42 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 326 total seconds 
+Sun Sep  2 20:56:52 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 336 total seconds 
+Sun Sep  2 20:57:02 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 346 total seconds 
+Sun Sep  2 20:57:12 2018: Process with pid 11218 has been scheduled for more than 100 seconds: 356 total seconds 
+Sun Sep  2 23:09:31 2018: Process with pid 12516 has been scheduled for more than 100 seconds: 101 total seconds 
+Sun Sep  2 23:09:41 2018: Process with pid 12516 has been scheduled for more than 100 seconds: 111 total seconds 
+Sun Sep  2 23:09:51 2018: Process with pid 12516 has been scheduled for more than 100 seconds: 121 total seconds 
+Sun Sep  2 23:10:01 2018: Process with pid 12516 has been scheduled for more than 100 seconds: 131 total seconds 
+Sun Sep  2 23:10:11 2018: Process with pid 12516 has been scheduled for more than 100 seconds: 141 total seconds 
+Sun Sep  2 23:10:21 2018: Process with pid 12516 has been scheduled for more than 100 seconds: 151 total seconds 
+Sun Sep  2 23:10:26 2018: Process with pid 12516 has been finished with SIGINT signal
+Sun Sep  2 23:15:46 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 110 total seconds 
+Sun Sep  2 23:15:56 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 120 total seconds 
+Sun Sep  2 23:16:06 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 130 total seconds 
+Sun Sep  2 23:16:16 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 140 total seconds 
+Sun Sep  2 23:16:26 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 150 total seconds 
+Sun Sep  2 23:16:36 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 160 total seconds 
+Sun Sep  2 23:16:46 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 165 total seconds 
+Sun Sep  2 23:16:56 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 170 total seconds 
+Sun Sep  2 23:17:06 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 175 total seconds 
+Sun Sep  2 23:17:16 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 180 total seconds 
+Sun Sep  2 23:17:26 2018: Process with pid 12830 has been scheduled for more than 100 seconds: 185 total seconds 
+Sun Sep  2 23:17:33 2018: Process with pid 12830 has been finished with SIGINT signal
+Sun Sep  2 23:17:43 2018: Process with pid 12941 has been finished with SIGINT signal
+Mon Sep  3 00:09:08 2018: Process with pid 13464 has been paused with SIGSTOP signal
+Mon Sep  3 00:09:22 2018: Process with pid 13464 has been continued with SIGCONT signal
+Mon Sep  3 00:09:31 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 107 total seconds 
+Mon Sep  3 00:09:41 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 117 total seconds 
+Mon Sep  3 00:09:51 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 127 total seconds 
+Mon Sep  3 00:10:01 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 137 total seconds 
+Mon Sep  3 00:10:11 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 147 total seconds 
+Mon Sep  3 00:10:21 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 157 total seconds 
+Mon Sep  3 00:10:31 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 167 total seconds 
+Mon Sep  3 00:10:41 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 177 total seconds 
+Mon Sep  3 00:10:51 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 186 total seconds 
+Mon Sep  3 00:11:01 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 196 total seconds 
+Mon Sep  3 00:11:11 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 205 total seconds 
+Mon Sep  3 00:11:21 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 214 total seconds 
+Mon Sep  3 00:11:31 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 224 total seconds 
+Mon Sep  3 00:11:31 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 104 total seconds 
+Mon Sep  3 00:11:41 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 233 total seconds 
+Mon Sep  3 00:11:41 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 113 total seconds 
+Mon Sep  3 00:11:51 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 243 total seconds 
+Mon Sep  3 00:11:51 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 123 total seconds 
+Mon Sep  3 00:12:01 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 253 total seconds 
+Mon Sep  3 00:12:01 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 133 total seconds 
+Mon Sep  3 00:12:11 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 263 total seconds 
+Mon Sep  3 00:12:11 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 143 total seconds 
+Mon Sep  3 00:12:11 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 104 total seconds 
+Mon Sep  3 00:12:21 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 273 total seconds 
+Mon Sep  3 00:12:21 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 153 total seconds 
+Mon Sep  3 00:12:21 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 114 total seconds 
+Mon Sep  3 00:12:31 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 283 total seconds 
+Mon Sep  3 00:12:31 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 163 total seconds 
+Mon Sep  3 00:12:31 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 124 total seconds 
+Mon Sep  3 00:12:41 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 293 total seconds 
+Mon Sep  3 00:12:41 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 173 total seconds 
+Mon Sep  3 00:12:41 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 134 total seconds 
+Mon Sep  3 00:12:51 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 303 total seconds 
+Mon Sep  3 00:12:51 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 182 total seconds 
+Mon Sep  3 00:12:51 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 144 total seconds 
+Mon Sep  3 00:13:01 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 313 total seconds 
+Mon Sep  3 00:13:01 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 192 total seconds 
+Mon Sep  3 00:13:01 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 153 total seconds 
+Mon Sep  3 00:13:11 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 322 total seconds 
+Mon Sep  3 00:13:11 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 202 total seconds 
+Mon Sep  3 00:13:11 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 163 total seconds 
+Mon Sep  3 00:13:21 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 332 total seconds 
+Mon Sep  3 00:13:21 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 212 total seconds 
+Mon Sep  3 00:13:21 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 173 total seconds 
+Mon Sep  3 00:13:31 2018: Process with pid 13464 has been scheduled for more than 100 seconds: 342 total seconds 
+Mon Sep  3 00:13:31 2018: Process with pid 13604 has been scheduled for more than 100 seconds: 221 total seconds 
+Mon Sep  3 00:13:31 2018: Process with pid 13646 has been scheduled for more than 100 seconds: 183 total seconds 
+Mon Sep  3 00:16:42 2018: Process with pid 13864 has been assigned to core 0 
+Mon Sep  3 00:18:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 110 total seconds 
+Mon Sep  3 00:18:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 120 total seconds 
+Mon Sep  3 00:18:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 130 total seconds 
+Mon Sep  3 00:19:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 140 total seconds 
+Mon Sep  3 00:19:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 150 total seconds 
+Mon Sep  3 00:19:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 160 total seconds 
+Mon Sep  3 00:19:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 170 total seconds 
+Mon Sep  3 00:19:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 180 total seconds 
+Mon Sep  3 00:19:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 190 total seconds 
+Mon Sep  3 00:20:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 200 total seconds 
+Mon Sep  3 00:20:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 210 total seconds 
+Mon Sep  3 00:20:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 220 total seconds 
+Mon Sep  3 00:20:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 230 total seconds 
+Mon Sep  3 00:20:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 240 total seconds 
+Mon Sep  3 00:20:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 250 total seconds 
+Mon Sep  3 00:21:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 260 total seconds 
+Mon Sep  3 00:21:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 270 total seconds 
+Mon Sep  3 00:21:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 280 total seconds 
+Mon Sep  3 00:21:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 290 total seconds 
+Mon Sep  3 00:21:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 300 total seconds 
+Mon Sep  3 00:21:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 310 total seconds 
+Mon Sep  3 00:22:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 320 total seconds 
+Mon Sep  3 00:22:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 330 total seconds 
+Mon Sep  3 00:22:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 340 total seconds 
+Mon Sep  3 00:22:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 350 total seconds 
+Mon Sep  3 00:22:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 360 total seconds 
+Mon Sep  3 00:22:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 370 total seconds 
+Mon Sep  3 00:23:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 380 total seconds 
+Mon Sep  3 00:23:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 390 total seconds 
+Mon Sep  3 00:23:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 400 total seconds 
+Mon Sep  3 00:23:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 410 total seconds 
+Mon Sep  3 00:23:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 420 total seconds 
+Mon Sep  3 00:23:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 430 total seconds 
+Mon Sep  3 00:24:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 440 total seconds 
+Mon Sep  3 00:24:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 450 total seconds 
+Mon Sep  3 00:24:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 460 total seconds 
+Mon Sep  3 00:24:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 470 total seconds 
+Mon Sep  3 00:24:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 480 total seconds 
+Mon Sep  3 00:24:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 489 total seconds 
+Mon Sep  3 00:25:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 499 total seconds 
+Mon Sep  3 00:25:12 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 509 total seconds 
+Mon Sep  3 00:25:22 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 519 total seconds 
+Mon Sep  3 00:25:32 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 529 total seconds 
+Mon Sep  3 00:25:42 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 539 total seconds 
+Mon Sep  3 00:25:52 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 549 total seconds 
+Mon Sep  3 00:26:02 2018: Process with pid 13864 has been scheduled for more than 100 seconds: 559 total seconds 
+Mon Sep  3 00:26:05 2018: Process with pid 13864 has been finished with SIGINT signal
+Mon Sep  3 00:27:45 2018: Process with pid 14323 has been assigned to core 0 
+Mon Sep  3 00:28:48 2018: Process with pid 14323 has been finished with SIGINT signal
+Mon Sep  3 00:29:03 2018: Process with pid 14421 has been assigned to core 0 
+Mon Sep  3 00:29:22 2018: Process with pid 14421 has been finished with SIGINT signal
+Mon Sep  3 09:52:57 2018: Process with pid 15388 has been assigned to core 0 
+Mon Sep  3 09:53:13 2018: Process with pid 15388 has been finished with SIGINT signal
+Mon Sep  3 10:05:30 2018: Process with pid 15642 has been assigned to core 0 
+Mon Sep  3 10:06:07 2018: Process with pid 15642 has been paused with SIGSTOP signal
+Mon Sep  3 10:06:16 2018: Process with pid 15642 has been continued with SIGCONT signal
+Mon Sep  3 10:06:20 2018: 0 process finished in last minute 
+Mon Sep  3 10:06:32 2018: Process with pid 15642 has been finished with SIGINT signal
+Mon Sep  3 10:07:20 2018: 1 process finished in last minute 
+Mon Sep  3 10:08:20 2018: 0 process finished in last minute 

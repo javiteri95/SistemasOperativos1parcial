@@ -20,9 +20,12 @@ void clean_stdin(void);
 int readArchivo(char* path, char* resultado, int resultadoSize);
 void generarEstadisticas(int pidLocal, int modo);
 int generarYSetearAfinidad(int pid);
+void signal_handler(int test);
 
 sem_t mutex;
 sem_t mutexAfinity;
+sem_t mutexLog;
+sem_t mutexCounterProcess;
 informacion_cliente tablaUsuarios[10000];
 pid_t pids[10000];
 static int booleansAfinity[10000];
@@ -31,6 +34,7 @@ int counterPids = 0;
 pthread_t tid,tid2;
 int time_limit = 100;
 int pages_limits = 5000;
+int process_counter = 0;
 
 int main(int argc, char **argv)
 {
@@ -44,12 +48,15 @@ int main(int argc, char **argv)
 	//sem_post (&mutex);
 	sem_init(&mutex,1, 1);
 	sem_init(&mutexAfinity,1,1);
-	time_t when;
+	sem_init(&mutexLog,1,1);
+	sem_init(&mutexCounterProcess,1,1);
+	//time_t when;
 	pid_t pid;
-	int status;
+	//int status;
 	int statusThread;
 	int logThread;
 
+	signal(SIGUSR1, signal_handler);
 	statusThread = pthread_create(&tid, NULL, &hiloAdministrador, NULL);
 	logThread = pthread_create(&tid2, NULL, &hiloLog, NULL);
 	//trashThread = pthread_create(&tid2, NULL, &hiloRecogedor, NULL);
@@ -110,8 +117,11 @@ int main(int argc, char **argv)
 			quitNewCharacterLineInput(timeInfo);
 			FILE *pFile2;
 			pFile2 = fopen("logFile_warnings.txt","a");
+			sem_wait(&mutexLog);
 			fprintf(pFile2,"%s: Process with pid %d has finished correctly\n",timeInfo, getpid());
+			sem_post(&mutexLog);
 			fclose(pFile2);
+			kill(getppid(),SIGUSR1);
 			exit(3);
 
 		}else{ //parent
@@ -466,20 +476,25 @@ void manejadorSennales(int pid, int sennal){
 			}
 			
 		}
-		
-		
+		sem_wait(&mutexLog);
 		fprintf(pFile2,"%s: Process with pid %d has been finished with SIGINT signal\n",timeInfo, pid);
+		sem_post(&mutexLog);
+		kill(getpid(),SIGUSR1);
 		
 
 	}else if(sennal == 2){
 		kill(pid, SIGSTOP);
         printf("Sent a SIGSTOP signal to process with PID: %d\n", pid);
+		sem_wait(&mutexLog);
 		fprintf(pFile2,"%s: Process with pid %d has been paused with SIGSTOP signal\n",timeInfo, pid);
+		sem_post(&mutexLog);
 
 	}else if (sennal == 3){
 		kill(pid, SIGCONT );
         printf("Sent a SIGCONT signal to process with PID: %d\n", pid);
+		sem_wait(&mutexLog);
 		fprintf(pFile2,"%s: Process with pid %d has been continued with SIGCONT signal\n",timeInfo, pid);
+		sem_post(&mutexLog);
 
 	}else{
 		printf("No existe ninguna de esas opciones\n");
@@ -497,7 +512,7 @@ void clean_stdin(void) {
 }
 
 void* hiloLog(void *arg){
-	printf("generar estadisticas iniciado\n");
+	int counterProcesos2 = 0;
 	while(1){
 		//printf("entrando\n");
 		int numberProcess = counterPids;
@@ -520,6 +535,26 @@ void* hiloLog(void *arg){
 			}
 		}
 		sleep(10);
+		counterProcesos2++;
+		if (counterProcesos2 > 5){
+			time_t rawtime;
+			struct tm * timeinfo;
+			time ( &rawtime );
+			timeinfo = localtime ( &rawtime );
+			char* timeInfo = strdup(asctime (timeinfo));
+			quitNewCharacterLineInput(timeInfo);
+			FILE *pFile;		
+			pFile = fopen("logFile_warnings.txt","a");
+			sem_wait(&mutexLog);
+			fprintf(pFile,"%s: %d process finished in last minute \n",timeInfo, process_counter);
+			sem_post(&mutexLog);
+			fclose(pFile);
+			counterProcesos2 = 0;
+			sem_wait(&mutexCounterProcess);
+			process_counter = 0;
+			sem_post(&mutexCounterProcess);
+			
+		}
 				
 			
 	}
@@ -648,14 +683,18 @@ void generarEstadisticas(int pidLocal, int modo){
 		if (totalPageFaults > pages_limits){
 			FILE *pFile2;
 			pFile2 = fopen("logFile_warnings.txt","a");
+			sem_wait(&mutexLog);
 			fprintf(pFile2,"%s: Process with pid %d has now more than %d page faults: %lu total page faults \n",timeInfo, pidLocal, pages_limits, totalPageFaults);
+			sem_post(&mutexLog);
 			fclose(pFile2);
 		}
 
 		if (totalmode > time_limit){
 			FILE *pFile2;
 			pFile2 = fopen("logFile_warnings.txt","a");
+			sem_wait(&mutexLog);
 			fprintf(pFile2,"%s: Process with pid %d has been scheduled for more than %d seconds: %lu total seconds \n",timeInfo, pidLocal, time_limit, totalmode);
+			sem_post(&mutexLog);
 			fclose(pFile2);
 		}
 
@@ -698,12 +737,21 @@ int generarYSetearAfinidad(int pid){
 			quitNewCharacterLineInput(timeInfo);
 			FILE *pFile;		
 			pFile = fopen("logFile_warnings.txt","a");
+			sem_wait(&mutexLog);
 			fprintf(pFile,"%s: Process with pid %d has been assigned to core %d \n",timeInfo, pid, assignedCore);
+			sem_post(&mutexLog);
 			fclose(pFile);
 		}
 
 	}
 	return valueReturn;
+}
+
+void signal_handler(int test){
+	sem_wait(&mutexCounterProcess);
+	process_counter++;
+	sem_post(&mutexCounterProcess);
+	//printf("he recibido señal\n");
 }
 
 

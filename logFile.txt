@@ -174,3 +174,3339 @@ Total time spent in user mode: 124 seconds
 Total time of process been scheduled: 124 seconds 
 Total virtual memory: 160481280
 
+Current local time and date: Sun Sep  2 20:29:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 1 seconds 
+Total time of process been scheduled: 1 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:29:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 11 seconds 
+Total time of process been scheduled: 11 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:29:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 21 seconds 
+Total time of process been scheduled: 21 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:29:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 31 seconds 
+Total time of process been scheduled: 31 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:29:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 41 seconds 
+Total time of process been scheduled: 41 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:29:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 51 seconds 
+Total time of process been scheduled: 51 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:30:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 61 seconds 
+Total time of process been scheduled: 61 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:30:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 71 seconds 
+Total time of process been scheduled: 71 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:30:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 81 seconds 
+Total time of process been scheduled: 81 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:30:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 91 seconds 
+Total time of process been scheduled: 91 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:30:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 101 seconds 
+Total time of process been scheduled: 101 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:30:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 111 seconds 
+Total time of process been scheduled: 111 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:31:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 121 seconds 
+Total time of process been scheduled: 121 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:31:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 131 seconds 
+Total time of process been scheduled: 131 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:31:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 141 seconds 
+Total time of process been scheduled: 141 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:31:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 151 seconds 
+Total time of process been scheduled: 151 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:31:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 161 seconds 
+Total time of process been scheduled: 161 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:31:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 171 seconds 
+Total time of process been scheduled: 171 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:32:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 181 seconds 
+Total time of process been scheduled: 181 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:32:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 191 seconds 
+Total time of process been scheduled: 191 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:32:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 201 seconds 
+Total time of process been scheduled: 201 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:32:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 211 seconds 
+Total time of process been scheduled: 211 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:32:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 221 seconds 
+Total time of process been scheduled: 221 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:32:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 231 seconds 
+Total time of process been scheduled: 231 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:33:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 241 seconds 
+Total time of process been scheduled: 241 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:33:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 251 seconds 
+Total time of process been scheduled: 251 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:33:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 261 seconds 
+Total time of process been scheduled: 261 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:33:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 271 seconds 
+Total time of process been scheduled: 271 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:33:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 281 seconds 
+Total time of process been scheduled: 281 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:33:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 291 seconds 
+Total time of process been scheduled: 291 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:34:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 301 seconds 
+Total time of process been scheduled: 301 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:34:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 311 seconds 
+Total time of process been scheduled: 311 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:34:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 321 seconds 
+Total time of process been scheduled: 321 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:34:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 331 seconds 
+Total time of process been scheduled: 331 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:34:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 341 seconds 
+Total time of process been scheduled: 341 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:34:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 351 seconds 
+Total time of process been scheduled: 351 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:35:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 361 seconds 
+Total time of process been scheduled: 361 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:35:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 371 seconds 
+Total time of process been scheduled: 371 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:35:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 381 seconds 
+Total time of process been scheduled: 381 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:35:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 391 seconds 
+Total time of process been scheduled: 391 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:35:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 401 seconds 
+Total time of process been scheduled: 401 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:35:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 411 seconds 
+Total time of process been scheduled: 411 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:36:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 421 seconds 
+Total time of process been scheduled: 421 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:36:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 431 seconds 
+Total time of process been scheduled: 431 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:36:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 441 seconds 
+Total time of process been scheduled: 441 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:36:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 451 seconds 
+Total time of process been scheduled: 451 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:36:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 461 seconds 
+Total time of process been scheduled: 461 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:36:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 471 seconds 
+Total time of process been scheduled: 471 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:37:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 481 seconds 
+Total time of process been scheduled: 481 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:37:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 491 seconds 
+Total time of process been scheduled: 491 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:37:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 501 seconds 
+Total time of process been scheduled: 501 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:37:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 511 seconds 
+Total time of process been scheduled: 511 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:37:46 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 521 seconds 
+Total time of process been scheduled: 521 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:37:56 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 531 seconds 
+Total time of process been scheduled: 531 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:38:06 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 541 seconds 
+Total time of process been scheduled: 541 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:38:16 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 551 seconds 
+Total time of process been scheduled: 551 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:38:26 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 561 seconds 
+Total time of process been scheduled: 561 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:38:36 2018
+Process information with pid 10479
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 571 seconds 
+Total time of process been scheduled: 571 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:51:22 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 6 seconds 
+Total time of process been scheduled: 6 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:51:32 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 16 seconds 
+Total time of process been scheduled: 16 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:51:42 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 26 seconds 
+Total time of process been scheduled: 26 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:51:52 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 36 seconds 
+Total time of process been scheduled: 36 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:52:02 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 46 seconds 
+Total time of process been scheduled: 46 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:52:12 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 56 seconds 
+Total time of process been scheduled: 56 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:52:22 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 66 seconds 
+Total time of process been scheduled: 66 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:52:32 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 76 seconds 
+Total time of process been scheduled: 76 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:52:42 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 86 seconds 
+Total time of process been scheduled: 86 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:52:52 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 96 seconds 
+Total time of process been scheduled: 96 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:53:02 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 106 seconds 
+Total time of process been scheduled: 106 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:53:12 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 116 seconds 
+Total time of process been scheduled: 116 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:53:22 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 126 seconds 
+Total time of process been scheduled: 126 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:53:32 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 136 seconds 
+Total time of process been scheduled: 136 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:53:42 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 146 seconds 
+Total time of process been scheduled: 146 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:53:52 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 156 seconds 
+Total time of process been scheduled: 156 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:54:02 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 166 seconds 
+Total time of process been scheduled: 166 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:54:12 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 176 seconds 
+Total time of process been scheduled: 176 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:54:22 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 186 seconds 
+Total time of process been scheduled: 186 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:54:32 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 196 seconds 
+Total time of process been scheduled: 196 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:54:42 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 206 seconds 
+Total time of process been scheduled: 206 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:54:52 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 216 seconds 
+Total time of process been scheduled: 216 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:55:02 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 226 seconds 
+Total time of process been scheduled: 226 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:55:12 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 236 seconds 
+Total time of process been scheduled: 236 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:55:22 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 246 seconds 
+Total time of process been scheduled: 246 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:55:32 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 256 seconds 
+Total time of process been scheduled: 256 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:55:42 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 266 seconds 
+Total time of process been scheduled: 266 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:55:52 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 276 seconds 
+Total time of process been scheduled: 276 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:56:02 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 286 seconds 
+Total time of process been scheduled: 286 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:56:12 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 296 seconds 
+Total time of process been scheduled: 296 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:56:22 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 306 seconds 
+Total time of process been scheduled: 306 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:56:32 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 316 seconds 
+Total time of process been scheduled: 316 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:56:42 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 326 seconds 
+Total time of process been scheduled: 326 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:56:52 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 336 seconds 
+Total time of process been scheduled: 336 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:57:02 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 346 seconds 
+Total time of process been scheduled: 346 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 20:57:12 2018
+Process information with pid 11218
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 356 seconds 
+Total time of process been scheduled: 356 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:07:51 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 1 seconds 
+Total time of process been scheduled: 1 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:08:01 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 11 seconds 
+Total time of process been scheduled: 11 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:08:11 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 21 seconds 
+Total time of process been scheduled: 21 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:08:21 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 31 seconds 
+Total time of process been scheduled: 31 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:08:31 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 41 seconds 
+Total time of process been scheduled: 41 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:08:41 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 51 seconds 
+Total time of process been scheduled: 51 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:08:51 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 61 seconds 
+Total time of process been scheduled: 61 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:09:01 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 71 seconds 
+Total time of process been scheduled: 71 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:09:11 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 81 seconds 
+Total time of process been scheduled: 81 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:09:21 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 91 seconds 
+Total time of process been scheduled: 91 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:09:31 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 101 seconds 
+Total time of process been scheduled: 101 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:09:41 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 111 seconds 
+Total time of process been scheduled: 111 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:09:51 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 121 seconds 
+Total time of process been scheduled: 121 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:10:01 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 131 seconds 
+Total time of process been scheduled: 131 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:10:11 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 141 seconds 
+Total time of process been scheduled: 141 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:10:21 2018
+Process information with pid 12516
+State: R
+Total minor Faults: 4636
+Total mayor faults: 0
+Total Page Faults: 4636
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 151 seconds 
+Total time of process been scheduled: 151 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:12:12 2018
+Process information with pid 12682
+State: R
+Total minor Faults: 4630
+Total mayor faults: 0
+Total Page Faults: 4630
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 9 seconds 
+Total time of process been scheduled: 9 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:12:22 2018
+Process information with pid 12682
+State: R
+Total minor Faults: 4630
+Total mayor faults: 0
+Total Page Faults: 4630
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 19 seconds 
+Total time of process been scheduled: 19 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:12:32 2018
+Process information with pid 12682
+State: R
+Total minor Faults: 4630
+Total mayor faults: 0
+Total Page Faults: 4630
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 29 seconds 
+Total time of process been scheduled: 29 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:12:42 2018
+Process information with pid 12682
+State: R
+Total minor Faults: 4630
+Total mayor faults: 0
+Total Page Faults: 4630
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 39 seconds 
+Total time of process been scheduled: 39 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:12:57 2018
+Process information with pid 12746
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 1 seconds 
+Total time of process been scheduled: 1 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:13:07 2018
+Process information with pid 12746
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 11 seconds 
+Total time of process been scheduled: 11 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:13:17 2018
+Process information with pid 12746
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 21 seconds 
+Total time of process been scheduled: 21 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:13:27 2018
+Process information with pid 12746
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 31 seconds 
+Total time of process been scheduled: 31 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:13:37 2018
+Process information with pid 12746
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 41 seconds 
+Total time of process been scheduled: 41 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:13:56 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 0 seconds 
+Total time of process been scheduled: 0 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:14:06 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 10 seconds 
+Total time of process been scheduled: 10 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:14:16 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 20 seconds 
+Total time of process been scheduled: 20 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:14:26 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 30 seconds 
+Total time of process been scheduled: 30 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:14:36 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 40 seconds 
+Total time of process been scheduled: 40 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:14:46 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 50 seconds 
+Total time of process been scheduled: 50 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:14:56 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 60 seconds 
+Total time of process been scheduled: 60 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:15:06 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 70 seconds 
+Total time of process been scheduled: 70 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:15:16 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 80 seconds 
+Total time of process been scheduled: 80 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:15:26 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 90 seconds 
+Total time of process been scheduled: 90 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:15:36 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 100 seconds 
+Total time of process been scheduled: 100 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:15:46 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 110 seconds 
+Total time of process been scheduled: 110 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:15:56 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 120 seconds 
+Total time of process been scheduled: 120 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:06 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 130 seconds 
+Total time of process been scheduled: 130 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:16 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 140 seconds 
+Total time of process been scheduled: 140 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:26 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 150 seconds 
+Total time of process been scheduled: 150 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:26 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 4 seconds 
+Total time of process been scheduled: 4 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:16:36 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 160 seconds 
+Total time of process been scheduled: 160 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:36 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 13 seconds 
+Total time of process been scheduled: 13 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:16:46 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 165 seconds 
+Total time of process been scheduled: 165 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:46 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 18 seconds 
+Total time of process been scheduled: 18 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:16:56 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 170 seconds 
+Total time of process been scheduled: 170 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:16:56 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 23 seconds 
+Total time of process been scheduled: 23 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:17:06 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 175 seconds 
+Total time of process been scheduled: 175 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:17:06 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 28 seconds 
+Total time of process been scheduled: 28 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:17:16 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 180 seconds 
+Total time of process been scheduled: 180 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:17:16 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 33 seconds 
+Total time of process been scheduled: 33 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:17:26 2018
+Process information with pid 12830
+State: R
+Total minor Faults: 4635
+Total mayor faults: 0
+Total Page Faults: 4635
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 185 seconds 
+Total time of process been scheduled: 185 seconds 
+Total virtual memory: 93372416
+
+Current local time and date: Sun Sep  2 23:17:26 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 38 seconds 
+Total time of process been scheduled: 38 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Sun Sep  2 23:17:36 2018
+Process information with pid 12941
+State: R
+Total minor Faults: 4651
+Total mayor faults: 0
+Total Page Faults: 4651
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 45 seconds 
+Total time of process been scheduled: 45 seconds 
+Total virtual memory: 160481280
+
+Current local time and date: Mon Sep  3 00:07:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 1 seconds 
+Total time of process been scheduled: 1 seconds 
+Total virtual memory: 93413376
+
+Mon Sep  3 00:07:31 2018: Process with pid 13464 has been assigned to core 1 
+Current local time and date: Mon Sep  3 00:07:41 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 11 seconds 
+Total time of process been scheduled: 11 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:07:51 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 21 seconds 
+Total time of process been scheduled: 21 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:08:01 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 31 seconds 
+Total time of process been scheduled: 31 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:08:11 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 41 seconds 
+Total time of process been scheduled: 41 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:08:21 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 51 seconds 
+Total time of process been scheduled: 51 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:08:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 61 seconds 
+Total time of process been scheduled: 61 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:08:41 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 71 seconds 
+Total time of process been scheduled: 71 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:08:51 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 81 seconds 
+Total time of process been scheduled: 81 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:01 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 91 seconds 
+Total time of process been scheduled: 91 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:11 2018
+Process information with pid 13464
+State: T
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 98 seconds 
+Total time of process been scheduled: 98 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:21 2018
+Process information with pid 13464
+State: T
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 98 seconds 
+Total time of process been scheduled: 98 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 107 seconds 
+Total time of process been scheduled: 107 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:41 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 117 seconds 
+Total time of process been scheduled: 117 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:51 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 127 seconds 
+Total time of process been scheduled: 127 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:09:51 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 6 seconds 
+Total time of process been scheduled: 6 seconds 
+Total virtual memory: 160522240
+
+Mon Sep  3 00:09:51 2018: Process with pid 13604 has been assigned to core 2 
+Current local time and date: Mon Sep  3 00:10:01 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 137 seconds 
+Total time of process been scheduled: 137 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:10:01 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 16 seconds 
+Total time of process been scheduled: 16 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:11 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 147 seconds 
+Total time of process been scheduled: 147 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:10:11 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 26 seconds 
+Total time of process been scheduled: 26 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:21 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 157 seconds 
+Total time of process been scheduled: 157 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:10:21 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 36 seconds 
+Total time of process been scheduled: 36 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 167 seconds 
+Total time of process been scheduled: 167 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:10:31 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 46 seconds 
+Total time of process been scheduled: 46 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:31 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 7 seconds 
+Total time of process been scheduled: 7 seconds 
+Total virtual memory: 160522240
+
+Mon Sep  3 00:10:31 2018: Process with pid 13646 has been assigned to core 3 
+Current local time and date: Mon Sep  3 00:10:41 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 176 seconds 
+Total time of process been scheduled: 177 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:10:41 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 56 seconds 
+Total time of process been scheduled: 56 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:41 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 16 seconds 
+Total time of process been scheduled: 16 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:51 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 186 seconds 
+Total time of process been scheduled: 186 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:10:51 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 66 seconds 
+Total time of process been scheduled: 66 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:10:51 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 26 seconds 
+Total time of process been scheduled: 26 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:01 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 196 seconds 
+Total time of process been scheduled: 196 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:11:01 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 75 seconds 
+Total time of process been scheduled: 75 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:01 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 36 seconds 
+Total time of process been scheduled: 36 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:11 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 204 seconds 
+Total time of process been scheduled: 205 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:11:11 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 84 seconds 
+Total time of process been scheduled: 84 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:11 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 45 seconds 
+Total time of process been scheduled: 45 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:21 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 213 seconds 
+Total time of process been scheduled: 214 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:11:21 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 94 seconds 
+Total time of process been scheduled: 94 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:21 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 55 seconds 
+Total time of process been scheduled: 55 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 223 seconds 
+Total time of process been scheduled: 224 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:11:31 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 103 seconds 
+Total time of process been scheduled: 104 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:31 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 64 seconds 
+Total time of process been scheduled: 65 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:41 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 233 seconds 
+Total time of process been scheduled: 233 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:11:41 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 113 seconds 
+Total time of process been scheduled: 113 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:41 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 74 seconds 
+Total time of process been scheduled: 74 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:51 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 243 seconds 
+Total time of process been scheduled: 243 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:11:51 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 123 seconds 
+Total time of process been scheduled: 123 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:11:51 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 84 seconds 
+Total time of process been scheduled: 84 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:01 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 253 seconds 
+Total time of process been scheduled: 253 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:12:01 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 133 seconds 
+Total time of process been scheduled: 133 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:01 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 94 seconds 
+Total time of process been scheduled: 94 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:11 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 263 seconds 
+Total time of process been scheduled: 263 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:12:11 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 143 seconds 
+Total time of process been scheduled: 143 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:11 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 104 seconds 
+Total time of process been scheduled: 104 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:21 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 272 seconds 
+Total time of process been scheduled: 273 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:12:21 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 153 seconds 
+Total time of process been scheduled: 153 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:21 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 114 seconds 
+Total time of process been scheduled: 114 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 282 seconds 
+Total time of process been scheduled: 283 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:12:31 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 163 seconds 
+Total time of process been scheduled: 163 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:31 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 124 seconds 
+Total time of process been scheduled: 124 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:41 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 292 seconds 
+Total time of process been scheduled: 293 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:12:41 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 173 seconds 
+Total time of process been scheduled: 173 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:41 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 134 seconds 
+Total time of process been scheduled: 134 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:51 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 302 seconds 
+Total time of process been scheduled: 303 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:12:51 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 182 seconds 
+Total time of process been scheduled: 182 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:12:51 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 143 seconds 
+Total time of process been scheduled: 144 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:01 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 312 seconds 
+Total time of process been scheduled: 313 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:13:01 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 192 seconds 
+Total time of process been scheduled: 192 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:01 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 153 seconds 
+Total time of process been scheduled: 153 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:11 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 322 seconds 
+Total time of process been scheduled: 322 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:13:11 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 201 seconds 
+Total time of process been scheduled: 202 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:11 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 163 seconds 
+Total time of process been scheduled: 163 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:21 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 332 seconds 
+Total time of process been scheduled: 332 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:13:21 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 211 seconds 
+Total time of process been scheduled: 212 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:21 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 173 seconds 
+Total time of process been scheduled: 173 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:31 2018
+Process information with pid 13464
+State: R
+Total minor Faults: 4638
+Total mayor faults: 0
+Total Page Faults: 4638
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 341 seconds 
+Total time of process been scheduled: 342 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:13:31 2018
+Process information with pid 13604
+State: R
+Total minor Faults: 4639
+Total mayor faults: 0
+Total Page Faults: 4639
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 221 seconds 
+Total time of process been scheduled: 221 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:13:31 2018
+Process information with pid 13646
+State: R
+Total minor Faults: 4640
+Total mayor faults: 0
+Total Page Faults: 4640
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 182 seconds 
+Total time of process been scheduled: 183 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:16:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 0 seconds 
+Total time of process been scheduled: 0 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:16:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 10 seconds 
+Total time of process been scheduled: 10 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:17:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 20 seconds 
+Total time of process been scheduled: 20 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:17:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 30 seconds 
+Total time of process been scheduled: 30 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:17:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 40 seconds 
+Total time of process been scheduled: 40 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:17:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 50 seconds 
+Total time of process been scheduled: 50 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:17:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 60 seconds 
+Total time of process been scheduled: 60 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:17:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 70 seconds 
+Total time of process been scheduled: 70 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:18:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 80 seconds 
+Total time of process been scheduled: 80 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:18:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 90 seconds 
+Total time of process been scheduled: 90 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:18:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 100 seconds 
+Total time of process been scheduled: 100 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:18:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 110 seconds 
+Total time of process been scheduled: 110 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:18:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 120 seconds 
+Total time of process been scheduled: 120 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:18:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 130 seconds 
+Total time of process been scheduled: 130 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:19:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 140 seconds 
+Total time of process been scheduled: 140 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:19:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 150 seconds 
+Total time of process been scheduled: 150 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:19:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 160 seconds 
+Total time of process been scheduled: 160 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:19:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 170 seconds 
+Total time of process been scheduled: 170 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:19:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 180 seconds 
+Total time of process been scheduled: 180 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:19:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 190 seconds 
+Total time of process been scheduled: 190 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:20:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 200 seconds 
+Total time of process been scheduled: 200 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:20:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 210 seconds 
+Total time of process been scheduled: 210 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:20:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 220 seconds 
+Total time of process been scheduled: 220 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:20:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 230 seconds 
+Total time of process been scheduled: 230 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:20:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 240 seconds 
+Total time of process been scheduled: 240 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:20:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 250 seconds 
+Total time of process been scheduled: 250 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:21:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 260 seconds 
+Total time of process been scheduled: 260 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:21:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 270 seconds 
+Total time of process been scheduled: 270 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:21:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 280 seconds 
+Total time of process been scheduled: 280 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:21:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 290 seconds 
+Total time of process been scheduled: 290 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:21:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 300 seconds 
+Total time of process been scheduled: 300 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:21:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 310 seconds 
+Total time of process been scheduled: 310 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:22:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 320 seconds 
+Total time of process been scheduled: 320 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:22:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 329 seconds 
+Total time of process been scheduled: 330 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:22:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 339 seconds 
+Total time of process been scheduled: 340 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:22:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 349 seconds 
+Total time of process been scheduled: 350 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:22:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 359 seconds 
+Total time of process been scheduled: 360 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:22:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 369 seconds 
+Total time of process been scheduled: 370 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:23:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 379 seconds 
+Total time of process been scheduled: 380 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:23:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 389 seconds 
+Total time of process been scheduled: 390 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:23:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 399 seconds 
+Total time of process been scheduled: 400 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:23:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 409 seconds 
+Total time of process been scheduled: 410 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:23:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 419 seconds 
+Total time of process been scheduled: 420 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:23:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 429 seconds 
+Total time of process been scheduled: 430 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:24:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 439 seconds 
+Total time of process been scheduled: 440 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:24:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 449 seconds 
+Total time of process been scheduled: 450 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:24:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 459 seconds 
+Total time of process been scheduled: 460 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:24:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 469 seconds 
+Total time of process been scheduled: 470 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:24:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 479 seconds 
+Total time of process been scheduled: 480 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:24:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 489 seconds 
+Total time of process been scheduled: 489 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:25:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 499 seconds 
+Total time of process been scheduled: 499 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:25:12 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 509 seconds 
+Total time of process been scheduled: 509 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:25:22 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 519 seconds 
+Total time of process been scheduled: 519 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:25:32 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 529 seconds 
+Total time of process been scheduled: 529 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:25:42 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 539 seconds 
+Total time of process been scheduled: 539 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:25:52 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 549 seconds 
+Total time of process been scheduled: 549 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:26:02 2018
+Process information with pid 13864
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 559 seconds 
+Total time of process been scheduled: 559 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 00:27:45 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 4 seconds 
+Total time of process been scheduled: 4 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:27:55 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 13 seconds 
+Total time of process been scheduled: 13 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:28:05 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 23 seconds 
+Total time of process been scheduled: 23 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:28:15 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 33 seconds 
+Total time of process been scheduled: 33 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:28:25 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 43 seconds 
+Total time of process been scheduled: 43 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:28:35 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 53 seconds 
+Total time of process been scheduled: 53 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:28:45 2018
+Process information with pid 14323
+State: R
+Total minor Faults: 4632
+Total mayor faults: 0
+Total Page Faults: 4632
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 63 seconds 
+Total time of process been scheduled: 63 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:29:03 2018
+Process information with pid 14421
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 0 seconds 
+Total time of process been scheduled: 0 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 00:29:13 2018
+Process information with pid 14421
+State: R
+Total minor Faults: 4637
+Total mayor faults: 0
+Total Page Faults: 4637
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 10 seconds 
+Total time of process been scheduled: 10 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 09:52:57 2018
+Process information with pid 15388
+State: R
+Total minor Faults: 4643
+Total mayor faults: 0
+Total Page Faults: 4643
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 1 seconds 
+Total time of process been scheduled: 1 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 09:53:07 2018
+Process information with pid 15388
+State: R
+Total minor Faults: 4643
+Total mayor faults: 0
+Total Page Faults: 4643
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 11 seconds 
+Total time of process been scheduled: 11 seconds 
+Total virtual memory: 160522240
+
+Current local time and date: Mon Sep  3 10:05:30 2018
+Process information with pid 15642
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 0 seconds 
+Total time of process been scheduled: 0 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:05:40 2018
+Process information with pid 15642
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 10 seconds 
+Total time of process been scheduled: 10 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:05:50 2018
+Process information with pid 15642
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 20 seconds 
+Total time of process been scheduled: 20 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:06:00 2018
+Process information with pid 15642
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 30 seconds 
+Total time of process been scheduled: 30 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:06:10 2018
+Process information with pid 15642
+State: T
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 37 seconds 
+Total time of process been scheduled: 37 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:06:20 2018
+Process information with pid 15642
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 41 seconds 
+Total time of process been scheduled: 41 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:06:30 2018
+Process information with pid 15642
+State: R
+Total minor Faults: 4642
+Total mayor faults: 0
+Total Page Faults: 4642
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 51 seconds 
+Total time of process been scheduled: 51 seconds 
+Total virtual memory: 93413376
+
