@@ -3510,3 +3510,80 @@ Total time spent in user mode: 51 seconds
 Total time of process been scheduled: 51 seconds 
 Total virtual memory: 93413376
 
+Current local time and date: Mon Sep  3 10:15:30 2018
+Process information with pid 15879
+State: R
+Total minor Faults: 4641
+Total mayor faults: 0
+Total Page Faults: 4641
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 8 seconds 
+Total time of process been scheduled: 8 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 10:15:40 2018
+Process information with pid 15879
+State: R
+Total minor Faults: 4641
+Total mayor faults: 0
+Total Page Faults: 4641
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 18 seconds 
+Total time of process been scheduled: 18 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 21:55:01 2018
+Process information with pid 4029
+State: R
+Total minor Faults: 4605
+Total mayor faults: 82
+Total Page Faults: 4687
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 2 seconds 
+Total time of process been scheduled: 2 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 21:55:11 2018
+Process information with pid 4029
+State: R
+Total minor Faults: 4605
+Total mayor faults: 82
+Total Page Faults: 4687
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 12 seconds 
+Total time of process been scheduled: 12 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 21:55:21 2018
+Process information with pid 4029
+State: R
+Total minor Faults: 4605
+Total mayor faults: 82
+Total Page Faults: 4687
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 22 seconds 
+Total time of process been scheduled: 22 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 21:55:31 2018
+Process information with pid 4029
+State: R
+Total minor Faults: 4605
+Total mayor faults: 82
+Total Page Faults: 4687
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 32 seconds 
+Total time of process been scheduled: 32 seconds 
+Total virtual memory: 93413376
+
+Current local time and date: Mon Sep  3 21:55:41 2018
+Process information with pid 4029
+State: R
+Total minor Faults: 4605
+Total mayor faults: 82
+Total Page Faults: 4687
+Total time spent in kernel mode: 0 seconds 
+Total time spent in user mode: 42 seconds 
+Total time of process been scheduled: 42 seconds 
+Total virtual memory: 93413376
+

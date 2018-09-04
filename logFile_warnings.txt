@@ -208,3 +208,8 @@ Mon Sep  3 10:06:20 2018: 0 process finished in last minute
 Mon Sep  3 10:06:32 2018: Process with pid 15642 has been finished with SIGINT signal
 Mon Sep  3 10:07:20 2018: 1 process finished in last minute 
 Mon Sep  3 10:08:20 2018: 0 process finished in last minute 
+Mon Sep  3 10:15:30 2018: Process with pid 15879 has been assigned to core 0 
+Mon Sep  3 10:15:46 2018: Process with pid 15879 has been finished with SIGINT signal
+Mon Sep  3 21:55:01 2018: Process with pid 4029 has been assigned to core 0 
+Mon Sep  3 21:55:31 2018: 0 process finished in last minute 
+Mon Sep  3 21:55:50 2018: Process with pid 4029 has been finished with SIGINT signal
